@@ -2,8 +2,6 @@
 
 
 <include file="Common/header" />
-           
-        
         <div id="page-wrapper">
         <div class="graphs">	  
     <div class="content_bottom">
@@ -33,10 +31,10 @@
 		          <th>用户id</th>
 					<th>注册上家id</th>
 					<th>姓名</th>
-		          <th>动态钱包</th>
-				  <th>静态钱包</th>
-				  <th>充值钱包</th>
-		          <th>注册时间</th>
+		          <th>喜悦比</th>
+				  <th>货品</th>
+				  <th>商城积分</th>
+		          <th>知名度</th>
 					<th>操作</th>
 		        </tr>
 		      </thead>
@@ -56,10 +54,10 @@
 		          <th scope="row">{$v.uid}</th>
 				  <th>{$v.fuid}</th>
 				  <th>{$v.name}</th>
-		           <th>{$v.dongbag}</th>
-				  <th>{$v.jingbag}</th>
-				  <th>{$v.chargebag}</th>
-				  <td>{$v.addymd}</td>
+		           <th>{$v.xiyue}</th>
+				  <th>{$v.huoping}</th>
+				  <th>{$v.jifeng}</th>
+				  <td>{$v.zhiming}</td>
 				  <th><a href="__ROOT__/index.php/Admin/Menber/editeUser/id/{$v.uid}">修 改 </a></th>
 		        </tr>
 		      	<?php $i++ ;?>

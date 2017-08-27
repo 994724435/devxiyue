@@ -1,0 +1,1572 @@
+[ 2017-08-27T21:55:49+08:00 ] ::1 /devxiyue/index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-08-27T21:55:52+08:00 ] ::1 /devxiyue/index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T21:55:59+08:00 ] ::1 /devxiyue/index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin' AND `password` = '123asd'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T21:55:59+08:00 ] ::1 /devxiyue/index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_user`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Public/conn/header.html): failed to open stream: No such file or directory C:\php\phpstudy\WWW\devxiyue\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T21:56:07+08:00 ] ::1 /devxiyue/index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T21:56:40+08:00 ] ::1 /devxiyue/index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-08-27T21:56:51+08:00 ] ::1 /devxiyue/index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_user`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Public/conn/header.html): failed to open stream: No such file or directory C:\php\phpstudy\WWW\devxiyue\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T21:58:07+08:00 ] ::1 /devxiyue/index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_user`  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Public/conn/header.html): failed to open stream: No such file or directory C:\php\phpstudy\WWW\devxiyue\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-08-27T21:58:12+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:17:31+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-08-27T22:19:27+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:21:41+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:21:44+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:22:42+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:22:46+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:22:48+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-08-27T22:23:32+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:24:05+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:24:56+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-08-27T22:25:10+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:28:56+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: effectdays C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined index: daycome C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 53 行.
+NOTIC: [8] Undefined index: daynum C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Undefined index: one C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 55 行.
+NOTIC: [8] Undefined index: two C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: INSERT INTO `p_product` (`name`,`cont`,`pic`,`price`,`effectdays`,`daycome`,`daynum`,`one`,`two`,`addtime`) VALUES ('土豆','商品介绍商品','/devxiyue','800',NULL,NULL,NULL,NULL,NULL,'2017') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:28:56+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:28:58+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:29:52+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:29:52+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:30:14+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:30:20+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:30:31+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:30:38+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:31:04+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:31:18+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:31:39+08:00 ] ::1 /devxiyue/index.php/Admin/Index/addproduct
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: effectdays C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 52 行.
+NOTIC: [8] Undefined index: daycome C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 53 行.
+NOTIC: [8] Undefined index: daynum C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Undefined index: one C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 55 行.
+NOTIC: [8] Undefined index: two C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: INSERT INTO `p_product` (`name`,`cont`,`pic`,`price`,`effectdays`,`daycome`,`daynum`,`one`,`two`,`addtime`) VALUES ('大米','商品介绍商品介绍','/devxiyue','500',NULL,NULL,NULL,NULL,NULL,'2017') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:31:39+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-27T22:31:45+08:00 ] ::1 /devxiyue/index.php/Admin/Index/deleteproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `p_product` SET `state`='2' WHERE `id` = 1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:31:45+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:31:49+08:00 ] ::1 /devxiyue/index.php/Admin/Index/deleteproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `p_product` SET `state`='1' WHERE `id` = 1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:31:49+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:31:53+08:00 ] ::1 /devxiyue/index.php/Admin/Index/deleteproduct/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 2  [ RunTime:0.0010s ]
+SQL: UPDATE `p_product` SET `state`='2' WHERE `id` = 2 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:31:53+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:31:56+08:00 ] ::1 /devxiyue/index.php/Admin/Index/deleteproduct/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 2  [ RunTime:0.0010s ]
+SQL: UPDATE `p_product` SET `state`='1' WHERE `id` = 2 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:31:56+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:32:02+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:32:51+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:33:05+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: effectdays C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 100 行.
+NOTIC: [8] Undefined index: daycome C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 101 行.
+NOTIC: [8] Undefined index: daynum C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 102 行.
+NOTIC: [8] Undefined index: one C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined index: two C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: UPDATE `p_product` SET `name`='土豆1',`cont`='商品介绍商品1',`price`='801',`effectdays`=NULL,`daycome`=NULL,`daynum`=NULL,`one`=NULL,`two`=NULL,`addtime`='2017' WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:33:05+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:33:07+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:33:24+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:33:40+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:35:02+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0060s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\php\phpstudy\WWW\devxiyue\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: error C:\php\phpstudy\WWW\devxiyue\Application\Common\Common\function.php 第 77 行.
+NOTIC: [8] Undefined index: effectdays C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 100 行.
+NOTIC: [8] Undefined index: daycome C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 101 行.
+NOTIC: [8] Undefined index: daynum C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 102 行.
+NOTIC: [8] Undefined index: one C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined index: two C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: UPDATE `p_product` SET `name`='土豆1',`cont`='商品介绍商品1',`pic`='/devxiyue/Public/Uploads/2017-08-27/59a2d8966001c.png',`price`='801',`effectdays`=NULL,`daycome`=NULL,`daynum`=NULL,`one`=NULL,`two`=NULL,`addtime`='2017' WHERE `id` = 1 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:35:02+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:35:06+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:35:14+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\php\phpstudy\WWW\devxiyue\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: error C:\php\phpstudy\WWW\devxiyue\Application\Common\Common\function.php 第 77 行.
+NOTIC: [8] Undefined index: effectdays C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 100 行.
+NOTIC: [8] Undefined index: daycome C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 101 行.
+NOTIC: [8] Undefined index: daynum C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 102 行.
+NOTIC: [8] Undefined index: one C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 103 行.
+NOTIC: [8] Undefined index: two C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: UPDATE `p_product` SET `name`='大米',`cont`='商品介绍商品介绍',`pic`='/devxiyue/Public/Uploads/2017-08-27/59a2d8a24224b.png',`price`='500',`effectdays`=NULL,`daycome`=NULL,`daynum`=NULL,`one`=NULL,`two`=NULL,`addtime`='2017' WHERE `id` = 2 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:35:14+08:00 ] ::1 /devxiyue/index.php/Admin/Index/productlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_product`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:35:21+08:00 ] ::1 /devxiyue/index.php/Admin/Index/editeproduct/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_product` WHERE `id` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:37:42+08:00 ] ::1 /devxiyue/index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:37:47+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+NOTIC: [8] Undefined index: dongbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 193 行.
+NOTIC: [8] Undefined index: jingbag C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\e3f31c117d1c4646a307a2ada224a506.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:46:39+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:47:54+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:48:04+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/select?name=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_menber` WHERE `name` LIKE '%100%'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:48:07+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/select?name=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber` WHERE `name` LIKE '%100%'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-08-27T22:48:09+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/select?name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:48:16+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/editeUser/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber` WHERE `uid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-08-27T22:48:53+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/editeUser/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber` WHERE `uid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-27T22:49:01+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/editeUser/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+SQL: UPDATE `p_menber` SET `name`='100',`pwd`='1',`pwd2`='1' WHERE `uid` = 1 [ RunTime:0.0010s ]
+
+[ 2017-08-27T22:49:03+08:00 ] ::1 /devxiyue/index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

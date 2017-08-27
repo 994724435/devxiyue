@@ -3,8 +3,10 @@ namespace Home\Controller;
 use Think\Controller;
 class CommonController extends Controller {
 	public function _initialize(){
+
 		$function = explode('/',__ACTION__);
 		$curfunction =$function[count($function)-1];
+        session('uid',1);
 		if(!session('uid')){
 			echo "<script>alert('请登录');";
 			echo "window.location.href='".__ROOT__."/index.php/Home/Login/login';";
@@ -13,9 +15,9 @@ class CommonController extends Controller {
 		}
 		$menber =M('menber');
 		$res_user =$menber->where(array('uid'=>session('uid')))->select();
-//		$this->assign('function',$this->getfunction($curfunction));
+        $curlurl = 'http://'.$_SERVER['SERVER_NAME']."/devxiyue";
+        $this->assign('curlurl',$curlurl);
 		$this->assign('username',$res_user[0]);
-//		$this->assign('usertype',$this->chanefortype($res_user[0]['type']));
 	}
 
 	private function getfunction($curfunction){

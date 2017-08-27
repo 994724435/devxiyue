@@ -3,15 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 header('content-type:text/html;charset=utf-8');
 class IndexController extends CommonController {
-//	public function _initialize(){
-//		if($_GET['openid']){
-//			$menber =M('menber');
-//			$user=$menber->where(array('openid'=>$_GET['openid']))->select();
-//			S('name',$user[0]['name']);
-//			S('userid',$user[0]['id']);
-//			S('nickname',$user[0]['nickname']);
-//		}
-//	}
+
    //主页
 	public function index(){
 		$article =M('article');

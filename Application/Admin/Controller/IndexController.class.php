@@ -58,9 +58,9 @@ class IndexController extends CommonController {
             $product =M('product');
             $result = $product->add($data);
             if($result){
-                echo "<script>window.location.href = '".__ROOT__."/index.php/Admin/Index/addproduct';</script>";
+                echo "<script>window.location.href = '".__ROOT__."/index.php/Admin/Index/productlist';</script>";
             }else{
-                echo "<script>alert('添加失败');window.location.href = '".__ROOT__."/index.php/Admin/Index/addproduct';</script>";
+                echo "<script>alert('添加失败');window.location.href = '".__ROOT__."/index.php/Admin/Index/productlist';</script>";
             }
 
         }
