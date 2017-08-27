@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>公司首页</title>
+	<link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+	<link href="__ROOT__/Public/Home/css/bootstrap.min.css" rel="stylesheet">
+	<link href="__ROOT__/Public/Home/css/aui.min.css" rel="stylesheet">
+	<link href="__ROOT__/Public/Home/css/mui.picker.css" rel="stylesheet">
+	<link href="__ROOT__/Public/Home/css/mui.poppicker.css" rel="stylesheet">
+	<link href="__ROOT__/Public/Home/css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="__ROOT__/Public/Home/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="__ROOT__/Public/Home/js/aui.js"></script>
+	<script type="text/javascript" src="__ROOT__/Public/Home/js/mui.picker.js"></script>
+	<script type="text/javascript" src="__ROOT__/Public/Home/js/mui.poppicker.js"></script>
+	<script type="text/javascript" src="__ROOT__/Public/Home/js/bootstrap.min.js"></script>
+	<style>
+		.swiper-slide img{width: 100%;}
+		.swiper-container{margin-top: -20px;}
+	</style>
+</head>
+<body>
+<!-- 公共头部 -->
+<include file="Common/header" />
+
+<!-- 公共头部 -->
+<div class="container-fluid noPadding">
+	<!--<img src="__ROOT__/Public/Home/images/1.jpg" alt="" class="img-responsive" alt="Responsive image" style="margin-top: -20px;">-->
+	<!--<div class="introduce" style="padding:0 10px;">-->
+		<!--{$intro.cont}-->
+	<!--</div>-->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="__ROOT__/Public/Home/images/banner1.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="__ROOT__/Public/Home/images/banner2.jpg" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="__ROOT__/Public/Home/images/banner3.png" alt="">
+			</div>
+		</div>
+	   <div class="swiper-pagination"></div>
+	</div>
+	<ul class="nav grid"  id="myGRid" style="margin-top: 10px">
+
+		<li>
+			<a href="__ROOT__/index.php/Home/Index/introduce.html">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_10.jpg" alt="" class="iconImg"></div>
+				<div class="gridText">公司简介</div>
+			</a>
+		</li>
+		<li>
+			<a href="__ROOT__/index.php/Home/Index/advertising.html">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_20.png" alt="" class="iconImg"></div>
+				<div class="gridText">公司公告</div>
+			</a>
+		</li>
+		<li>
+			<a href="__ROOT__/index.php/Home/Index/K.html">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_1.png" alt="" class="iconImg"></div>
+				<div class="gridText">同步k线图</div>
+			</a>
+		</li>
+		<li>
+			<a href="__ROOT__/index.php/Home/Index/gruop.html">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_17.jpg" alt="" class="iconImg"></div>
+				<div class="gridText">值班团队</div>
+			</a>
+		</li>
+		<li>
+			<a href="__ROOT__/index.php/Home/Index/professor.html">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_5.png" alt="" class="iconImg"></div>
+				<div class="gridText">分析专家</div>
+			</a>
+		</li>
+		<li>
+			<a href="__ROOT__/index.php/Home/User/my.html">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_7.png" alt="" class="iconImg"></div>
+				<div class="gridText">个人中心</div>
+			</a>
+		</li>
+		<li>
+			<a href="__ROOT__/index.php/Home/Index/gongpai.html">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_9.png" alt="" class="iconImg"></div>
+				<div class="gridText">MIF公排</div>
+			</a>
+		</li>
+		<li>
+			<a href="__ROOT__/index.php/Home/Index/share/id/{$username.uid}">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_6.png" alt="" class="iconImg"></div>
+				<div class="gridText">MIF分享</div>
+			</a>
+		</li>
+		<li>
+			<a href="__ROOT__/index.php/Home/Login/login">
+				<div class="iconImgDiv"><img src="__ROOT__/Public/Home/images/mif/p_15.png" alt="" class="iconImg"></div>
+				<div class="gridText">退出登录</div>
+			</a>
+		</li>
+
+	</ul>
+
+	<video autoplay="autoplay" src="__ROOT__/Public/Home/images/video.mp4" controls="controls">
+		您的浏览器不支持 video 标签。
+	</video>
+
+</div>
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 2000,//可选选项，自动滑动
+        pagination : '.swiper-pagination',
+    })
+</script>
+</body>
+
+</html>
