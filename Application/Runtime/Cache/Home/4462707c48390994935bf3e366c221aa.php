@@ -42,9 +42,9 @@
 		<div class="main_head" style="position: fixed;">
 			<div class="main_head_top">
 				<span>名字</span>
-				<span id="main_name">张三</span>
+				<span id="main_name"><?php echo ($username["name"]); ?></span>
 				<span>店铺</span>
-				<span id="main_shop">紫悦城</span>
+				<span id="main_shop"><?php echo ($username["shopname"]); ?></span>
 			</div>
 			<div class="main_head_down">
 				<div class="head_box">
@@ -113,39 +113,21 @@
 					<span class="main_close">  </span>
 				</div>
 				<ul class="main_pop_body mission">
-					<li class="main_pop_body_li main_pop_body_li1">
+					<?php if(is_array($product)): foreach($product as $key=>$v): ?><li class="main_pop_body_li main_pop_body_li1">
 						<ul>
 							<li class="main_pop_body_ul1">
 								<img src="<?php echo ($curlurl); ?>/Public/Home/img/ren1.png" class="renwu_head">
 							</li>
 							<li class="main_pop_body_ul2">
-								<span class="renwu_title">土豆：商品介绍商品</span>
+								<span class="renwu_title"><?php echo ($v["name"]); ?>：<?php echo ($v["cont"]); ?></span>
 							</li>
 							<li class="main_pop_body_ul3">
 								<img src="<?php echo ($curlurl); ?>/Public/Home/img/gold.png" class="rwgold">
-								<span>￥800</span> 
-								<span class="renwu_ling renwu_ling1 buyy" data-id="1" data-money="800">购买</span>
+								<span>￥<?php echo ($v["price"]); ?></span>
+								<span class="renwu_ling renwu_ling1 buyy" data-id="<?php echo ($v["id"]); ?>" data-money="<?php echo ($v["price"]); ?>">购买</span>
 							</li>
 						</ul>
-					</li>
-
-					<li class="main_pop_body_li main_pop_body_li1">
-						<ul>
-							<li class="main_pop_body_ul1">
-								<img src="<?php echo ($curlurl); ?>/Public/Home/img/ren1.png" class="renwu_head">
-							</li>
-							<li class="main_pop_body_ul2">
-								<span class="renwu_title">大米：商品介绍商品介绍</span>
-							</li>
-							<li class="main_pop_body_ul3">
-								<img src="<?php echo ($curlurl); ?>/Public/Home/img/gold.png" class="rwgold">
-								<span>￥1000</span> 
-								<span class="renwu_ling renwu_ling1 buyy" data-id="2" data-money="1000">购买</span>
-							</li>
-						</ul>
-					</li>
-
-					
+					</li><?php endforeach; endif; ?>
 				</ul>
 			</div>
 			<div class="main_body_pop sureBuyMask">
@@ -155,25 +137,25 @@
 					<span class="main_close"></span>
 				</div>
 				<div class="main_pop_body setUp qiehuan">
-				    <form action="">
+					<form action="<?php echo U('index.php/Home/Index/buy');?>" method="post" enctype="multipart/form-data">
 					<ul class="main_com_body1 main_com_body">
-					    <input type="hidden" name="" id="buyMoney" />
-					    <input type="hidden" name="" id="goodsId" />
+					    <input type="hidden" name="price" id="buyMoney" />
+					    <input type="hidden" name="productid" id="goodsId" />
 						<li class="main_com_li">
 							<span class="main_com_li_left">收货地址:</span>
-							<input type="text" name=""/>
+							<input type="text" name="addr"/>
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">收货人姓名:</span>
-							<input type="text" name=""/>
+							<input type="text" name="username"/>
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">电话:</span>
-							<input type="number" name="" />
+							<input type="number" name="tel" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">邮编:</span>
-							<input type="number" name="" />
+							<input type="number" name="youbian" />
 						</li>
 					</ul>
 					<button class="setSwithBtn main_com addBtn">确认购买</button>
@@ -192,39 +174,37 @@
 					<span class="main_close">  </span>
 				</div>
 				<div class="main_pop_body">
-				    <form action="">
+					<form action="<?php echo U('index.php/Home/Index/jiaoyi');?>" method="post" enctype="multipart/form-data">
 					<ul class="main_com_body1 main_com_body">
 					<li class="main_com_li">
 							<span class="main_com_li_left">可出售币数量:</span>
-							<input type="text" name=""  value="600" disabled="disabled" />
+							<input type="text" name="xiyue"  value="<?php echo ($username["xiyue"]); ?>" readonly = "readonly" />
 						</li>
 						<li class="main_com_li">
-							<span class="main_com_li_left">目标用户名:</span>
-							<input type="text" name=""  value=""/>
+							<span class="main_com_li_left">目标用账户:</span>
+							<input type="text" name="tel"  value=""/>
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">目标姓名:</span>
-							<input type="text" name=""  value=""/>
+							<input type="text" name="name"  value=""/>
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">交易数量:</span>
-							<input type="text" name=""  value="" id="jiaoyiNUM" />
+							<input type="number" name="num"  value="" id="jiaoyiNUM" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">目标微信:</span>
-							<input type="text" name="" />
+							<input type="text" name="weixin" />
 						</li>
 						<li class="main_com_li">
-							<span class="main_com_li_left">手续费10%</span>
-							<input type="text" name=""  value="" disabled="disabled" id="shouxu" />
+							<span class="main_com_li_left">手续费</span>
+							<input type="text" name="souxu"  value="<?php echo $username['xiyue']*0.1 ?> " readonly = "readonly" id="shouxu" />
 						</li>
 						<li class="main_com_li">
-							<span class="main_com_li_left">银行信托基金10%</span>
-							<input type="text" name="" disabled="disabled" value="" id="yinhang"  />
+							<span class="main_com_li_left">银行信托基金</span>
+							<input type="text" name="jijin" readonly = "readonly" value="<?php echo $username['xiyue']*0.1 ?>" id="yinhang"  />
 						</li>
-					
-						
-						
+
 					</ul>
 					<ul class="main_com_body2 main_com_body">
 						
@@ -248,47 +228,47 @@
 					<span class="main_close">  </span>
 				</div>
 				<div class="main_pop_body">
-				    <form action="">
+				    <form action="<?php echo U('index.php/Home/Index/reg');?>" method="post" enctype="multipart/form-data">
 					<ul class="main_com_body1 main_com_body">
 						<li class="main_com_li">
 							<span class="main_com_li_left">推荐人账号:</span>
-							<input type="text" name="" id="tot_assets" value=""/>
+							<input type="text" name="mytel" id="tot_assets" value=""/>
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">当前余额:</span>
-							<input type="text" name=""  value="100" disabled="disabled" />
+							<input type="text" name="mymoney"  value="<?php echo ($username["xiyue"]); ?>" readonly = "readonly" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">注册消耗币:</span>
-							<input type="text" name=""  value="800" disabled="disabled" />
+							<input type="text" name="income"  value="800" readonly = "readonly" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">喜悦城账号:</span>
-							<input type="text" name=""  value="" />
+							<input type="text" name="nextel"  value="" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">真实姓名:</span>
-							<input type="text" name=""  value="" />
+							<input type="text" name="name"  value="" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">一级密码:</span>
-							<input type="password" name="" />
+							<input type="password" name="pwd1" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">确认一级密码:</span>
-							<input type="password" name="" />
+							<input type="password" name="pwd1c" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">二级密码:</span>
-							<input type="password" name="" />
+							<input type="password" name="pwd2" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">确认二级密码:</span>
-							<input type="password" name="" />
+							<input type="password" name="pwd2c" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">微信:</span>
-							<input type="text" name=""  value="" />
+							<input type="text" name="weixin"  value="" />
 						</li>
 					</ul>
 					<ul class="main_com_body2 main_com_body">
@@ -355,7 +335,7 @@
 					   	<tr>
 					   		<td>188837829</td>
 					   		<td>张三</td>
-					   		<td><button type="button" class="lingqu">领取</button></td>
+					   		<td><a href=""><button type="button" class="lingqu">领取</button></a> </td>
 					   		<!-- <td>222</td> -->
 					   	</tr>
 					   	<tr>
@@ -400,7 +380,7 @@
 					<ul class="main_com_body1 main_com_body">
 						<li class="main_com_li">
 							<span class="main_com_li_left" style="width: 1.2rem">当前商铺货品总额:</span>
-							<input type="text" name="" value="600" disabled="disabled" />
+							<input type="text" name="" value="<?php echo ($username["huoping"]); ?>" disabled="disabled" />
 						</li>
 						
 					</ul>
@@ -573,39 +553,39 @@
 					   	<li>
 					   		<ul>
 					   			<li>我的货品</li>
-					   			<li>100</li>
+					   			<li><?php echo ($username["huoping"]); ?></li>
 					   		</ul>
 					   	</li>
 					   	<li>
 					   		<ul>
 					   			<li>喜悦币</li>
-					   			<li>100</li>
+					   			<li><?php echo ($username["xiyue"]); ?></li>
 					   		</ul>
 					   	</li>
 					   	<li>
 					   		<ul>
 					   			<li>商城积分</li>
-					   			<li>100</li>
+					   			<li><?php echo ($username["jifeng"]); ?></li>
 					   		</ul>
 					   	</li>
 					   	<li>
 					   		<ul>
 					   			<li>知名度</li>
-					   			<li>100</li>
+					   			<li><?php echo ($username["zhiming"]); ?></li>
 					   		</ul>
 					   	</li>
 				    </ul>
 				    <ul class="main_com_body1 main_com_body" id="duihuan">
 						<li class="main_com_li">
-							<span class="main_com_li_left">货币兑换喜悦币:</span>
+							<span class="main_com_li_left">货品兑换喜悦币:</span>
 							<input type="text" value="1" class="huobi" /> : <input type="text" value="0.7" disabled="disabled" class="xiyuebi" />
 						</li>
 						<li class="main_com_li">
-							<span class="main_com_li_left">喜悦币兑换货币:</span>
+							<span class="main_com_li_left">喜悦币兑换货品:</span>
 							<input type="text" value="1" class="xiyuebi1" /> : <input type="text" value="1" disabled="disabled" class="huobi1" />
 						</li>
 						<li class="main_com_li">
-							<span class="main_com_li_left" style="font-size: 12px;">货币兑换商城积分:</span>
+							<span class="main_com_li_left" style="font-size: 12px;">货品兑换商城积分:</span>
 							<input type="text" value="1" class="huobi2" /> : <input type="text" value="0.7" disabled="disabled" class="jifen" />
 						</li>
 						<li class="main_com_li">
@@ -613,8 +593,7 @@
 							<input type="text" value="1" class="xiyuebi2" /> : <input type="text" value="1" disabled="disabled" class="jifen1" />
 						</li>
 					     <button class="setSwithBtn main_com addBtn">确认兑换</button>
-						
-						
+
 					</ul>
 				  
 				</div>
@@ -633,30 +612,30 @@
 				<div class="main_pop_body" style="width: 100%;margin:0;">
 					<ul class="main_com_body1 main_com_body myList">
 					   <li class="main_com_li padingl">
-						    喜悦币：100
+						    喜悦币：<?php echo ($username["xiyue"]); ?>
 						</li>
 					    <li class="main_com_li padingl">
-						    我的货品：100
+						    我的货品：<?php echo ($username["huoping"]); ?>
 						</li>
 						
 						<li class="main_com_li padingl">
-						    商城积分：100
+						    商城积分：<?php echo ($username["jifeng"]); ?>
 						</li>
 						<li class="main_com_li padingl">
-						    我的知名度：100
+						    我的知名度：<?php echo ($username["zhiming"]); ?>
 						</li>
 					    <!-- 没购买显示尚未购买商品，购买了显示已发货 -->
 						<li class="main_com_li padingl">
 						    物流信息：尚未购买商品
 						</li>
 						<li class="main_com_li padingl">
-						    我的账号：1890002222
+						    我的账号：<?php echo ($username["tel"]); ?>
 						</li>
 						<li class="main_com_li padingl">
-						    我的姓名：小崔
+						    我的姓名：<?php echo ($username["name"]); ?>
 						</li>
 						<li class="main_com_li padingl">
-						    我的微信号：鹅鹅鹅饿饿
+						    我的微信号：<?php echo ($username["weixin"]); ?>
 						</li>
 						<button class="buy_money buy_mishu modifyPwd openPwd1">
 								修改一级密码

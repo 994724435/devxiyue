@@ -6,79 +6,195 @@ class IndexController extends CommonController {
 
    //主页
 	public function index(){
-		$article =M('article');
-		$intro= $article->order('aid DESC')->where(array('type'=>1))->select();
-		$this->assign('intro',$intro[0]);
-		$this->display();
+        echo "<script>";
+        echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+        echo "</script>";
+        exit;
 	}
 
-    /**
-     * 公司简介
-     */
-    public function introduce(){
-        $article =M('article');
-        $intro= $article->order('aid DESC')->where(array('type'=>5))->select();
-        $this->assign('intro',$intro[0]);
+	public function main(){
+	    $product =M('product');
+	    $res_pro = $product->where(array('state'=>1))->select();
+
+        // 财务明细
+        $income =M('incomelog')->select();
+
+        //下级
+        $xiaji = M("menber")->where(array('fid'=>session('uid'),'isling'=>0))->select();
+
+        $this->assign('xiaji',$xiaji);
+        $this->assign('product',$res_pro);
+        $this->assign('income',$income);
         $this->display();
     }
 
-    /**
-     * 公告
-     */
-    public function advertising(){
-        $article =M('article');
-        $intro= $article->order('aid DESC')->where(array('type'=>2))->select();
-        $this->assign('intro',$intro[0]);
-        $this->display();
+    public function reg(){
+	    if($_POST){
+	        if($_POST['pwd1']){
+	            if($_POST['pwd1'] !=$_POST['pwd1c']){
+                    echo "<script>alert('一级密码不一致');";
+                    echo "</script>";
+                    $this->display('main');
+                    exit;
+                }
+            }else{
+                echo "<script>alert('一级密码为空');";
+                echo "</script>";
+                $this->display('main');
+                exit;
+            }
+
+            if($_POST['pwd2']){
+                if($_POST['pwd2'] !=$_POST['pwd2c']){
+                    echo "<script>alert('一级密码不一致');";
+                    echo "</script>";
+                    $this->display('main');
+                    exit;
+                }
+            }else{
+                echo "<script>alert('一级密码为空');";
+                echo "</script>";
+                $this->display('main');
+                exit;
+            }
+
+
+            if($_POST['income'] > $_POST['mymoney']){
+                echo "<script>alert('余额不足');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit;
+            }
+
+            $postdate = $_POST;
+            unset($postdate['mytel']);
+            foreach ($postdate as $v){
+                if(empty($v)){
+                    echo "<script>alert('请将信息填写完整');";
+                    echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                    echo "</script>";
+                    exit();
+                }
+            }
+
+            $menber = M("menber");
+            $isuser= $menber->where(array('tel'=>$_POST['nextel']))->select();
+            if($isuser[0]){
+                echo "<script>alert('账号已注册');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            if($_POST['mytel']){
+                $myinfo =$menber->where(array('tel'=>$_POST['mytel']))->select();
+                if(!$myinfo[0]){
+                    echo "<script>alert('推荐人账号错误');";
+                    echo "</script>";
+                    $this->display('main');
+                    exit;
+                }
+                $data['fuid'] =$myinfo[0]['fuid'];
+                $fuids = $myinfo[0]['fuids'];
+            }
+
+            $data['name'] =$_POST['name'];
+            $data['pwd'] =$_POST['pwd1'];
+            $data['pwd2'] =$_POST['pwd2'];
+            $data['tel'] =$_POST['nextel'];
+            $data['weixin'] =$_POST['weixin'];
+            $data['addtime'] =time();
+            $data['addymd'] =date("Y-m-d H:i:s",time());
+            $data['shopname'] ="紫悦城";
+            $userid = $menber->add($data);
+
+            if($fuids){
+                $fuid1['fuids'] = $fuids.$userid.',';
+            }else{
+                $fuid1['fuids'] = $userid.',';
+            }
+            $menber->where(array('uid'=>$userid))->save($fuid1);
+
+            // 处理收入
+            $userinfo = $menber->where(array('uid'=>session('uid')))->select();
+            $xiyue= bcsub($userinfo[0]['xiyue'],$_POST['income']) ;
+            $menber->where(array('uid'=>session('uid')))->save(array('xiyue'=>$xiyue));
+
+            //处理注册余额
+            $income['type'] = 5;
+            $income['state'] = 2;
+            $income['reson'] = "注册下级";
+            $income['addymd'] = date("Y-m-d H:i:s",time());
+            $income['addtime'] = time();
+            $income['orderid'] = $userid;
+            $income['userid'] = session('uid');
+            $income['income'] = $_POST['income'];
+            M('incomelog')->add($income);
+
+            echo "<script>alert('下级注册成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit;
+        }
+
     }
 
-    /**
-     * 值班团队
-     */
-    public function gruop(){
-        $article =M('article');
-        $intro= $article->order('aid DESC')->where(array('type'=>3))->select();
-        $this->assign('intro',$intro[0]);
-        $this->display();
-    }
-
-    /**
-     * 分析专家
-     */
-    public function professor(){
-        $article =M('article');
-        $intro= $article->order('aid DESC')->where(array('type'=>4))->select();
-        $this->assign('intro',$intro[0]);
-        $this->display();
+    public function jiaoyi(){
+        print_r($_POST);die;
     }
 
 
-	//我的产品
-	public function financial(){
-		$orderlog =M('orderlog');
-		$result  = $orderlog->join('p_product ON p_orderlog.productid=p_product.id')->where(array('userid'=>session('uid')))->select();
-		foreach($result as $k=>$v){
-			if($v['states']==0){
-				$v['total'] = $v['prices'] *$v['num'];
-				$data['wait'][] =$v;
-			}
-			if($v['states']==1){
-				$v['total'] = $v['prices'] *$v['num'];
-				$data['coming'][] =$v;
-			}
-			if($v['states']==2){
-				$v['total'] = $v['prices'] *$v['num'];
-				$data['comoever'][] =$v;
-			}
-		}
-		$this->assign('res',$data);
-		$this->display();
-	}
+    public function buy(){
+        if($_POST){
+            $data= $_POST;
+            foreach ($data as $v){
+                if(empty($v)){
+                    echo "<script>alert('请将信息填写完整');";
+                    echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                    echo "</script>";
+                    exit();
+                }
+            }
 
-	public function share(){
-	    $url = "http://402231.ouyouhui.com"."/index.php/Home/Login/reg/fid/".session('uid').".html";
-	    $this->assign('url',$url);
-        $this->display();
+            $menber = M("menber");
+            $userinfo = $menber->where(array('uid'=>session('uid')))->select();
+            if($userinfo[0]['xiyue'] < $data['price']){
+                echo "<script>alert('余额不足');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            // 订单增加
+            $data['userid'] =session('uid');
+            $data['state'] =1;
+            $data['num'] =1;
+            $data['totals'] =$data['price'];
+            $data['addtime'] =time();
+            $data['addymd'] =date("Y-m-d H:i:s",time());
+            M("orderlog")->add($data);
+
+            // 处理收入
+            $xiyue= bcsub($userinfo[0]['xiyue'],$data['price']) ;
+            $menber->where(array('uid'=>session('uid')))->save(array('xiyue'=>$xiyue));
+
+            //处理注册余额
+            $income['type'] = 6;
+            $income['state'] = 2;
+            $income['reson'] = "注册下级";
+            $income['addymd'] = date("Y-m-d H:i:s",time());
+            $income['addtime'] = time();
+            $income['orderid'] = 0;
+            $income['userid'] = session('uid');
+            $income['income'] = $data['price'];
+            M('incomelog')->add($income);
+
+            echo "<script>alert('下单成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit;
+        }
+
     }
 
     public function K(){

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2017-08-27 23:55:58
+Date: 2017-08-29 22:24:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -91,7 +91,7 @@ CREATE TABLE `p_incomelog` (
   `income` varchar(64) DEFAULT '0' COMMENT '金额',
   `cont` varchar(1000) NOT NULL COMMENT '后台备注',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=465 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=467 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of p_incomelog
@@ -100,6 +100,8 @@ INSERT INTO `p_incomelog` VALUES ('461', '6', '2', '下单购买', '2017-08-17',
 INSERT INTO `p_incomelog` VALUES ('462', '11', '1', '下级购买MIF', '2017-08-17', '1502983180', '2', '1', '2.50', '1');
 INSERT INTO `p_incomelog` VALUES ('463', '10', '1', '静态收益', '2017-08-17', '1502983248', '53', '2', '15.0', '');
 INSERT INTO `p_incomelog` VALUES ('464', '10', '1', '静态收益', '2017-08-18', '1503064232', '53', '2', '15.0', '');
+INSERT INTO `p_incomelog` VALUES ('465', '5', '2', '注册下级', '2017-08-29', '1504013311', '24', '1', '800', '');
+INSERT INTO `p_incomelog` VALUES ('466', '6', '2', '注册下级', '2017-08-29', '1504016159', '0', '1', '500', '');
 
 -- ----------------------------
 -- Table structure for `p_menber`
@@ -108,6 +110,7 @@ DROP TABLE IF EXISTS `p_menber`;
 CREATE TABLE `p_menber` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL DEFAULT '',
+  `shopname` varchar(100) DEFAULT NULL COMMENT '店铺名字',
   `pwd` varchar(100) DEFAULT NULL,
   `tel` varchar(64) DEFAULT NULL,
   `type` int(4) DEFAULT '1' COMMENT '1普通 2 3 4',
@@ -120,7 +123,6 @@ CREATE TABLE `p_menber` (
   `addtime` int(12) DEFAULT NULL,
   `addymd` date DEFAULT NULL,
   `pwd2` varchar(255) NOT NULL,
-  `chargebag` varchar(50) DEFAULT '0' COMMENT '充值钱包',
   `zhifubao` varchar(100) DEFAULT NULL COMMENT '支付宝账号',
   `zhifubaoname` varchar(100) DEFAULT NULL COMMENT '支付宝姓名',
   `weixin` varchar(64) DEFAULT NULL,
@@ -128,31 +130,37 @@ CREATE TABLE `p_menber` (
   `bankname` varchar(64) DEFAULT NULL COMMENT '银行卡姓名',
   `bankfrom` varchar(100) DEFAULT NULL COMMENT '银行卡开户行',
   `isdelete` int(1) DEFAULT '0' COMMENT '0 未经用 1禁用',
+  `isling` int(2) DEFAULT '0' COMMENT '上级是否领取',
   PRIMARY KEY (`uid`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of p_menber
 -- ----------------------------
-INSERT INTO `p_menber` VALUES ('1', '100', '1', '100', '1', '1', '2', '3', '4', '0', '1,', null, null, '1', '142.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('2', '101', '1', '101', '1', '435.98', '275.00', '0', null, '1', '1,2,', '1502892880', '2017-08-16', '1', '1189.08', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('3', '102', '1', '102', '1', '14', '174', '0', null, '1', '1,3,', '1502893254', '2017-08-16', '1', '6.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('4', '103', '1', '103', '1', '41.08', '172', '0', null, '1', '1,4,', '1502893292', '2017-08-16', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('5', '104', '1', '104', '1', '41', '172', '0', null, '1', '1,5,', '1502893314', '2017-08-16', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('6', '105', '1', '105', '1', '6', '172', '0', null, '2', '1,2,6,', '1502893727', '2017-08-16', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('7', '106', '1', '106', '1', '6', '172', '0', null, '2', '1,2,7,', '1502893743', '2017-08-16', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('8', '107', '1', '107', '1', '2', '172', '0', null, '4', '1,4,8,', '1502894185', '2017-08-16', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('9', '108', '1', '108', '1', '2', '172', '0', null, '4', '1,4,9,', '1502894209', '2017-08-16', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('10', '109', '1', '109', '1', '2', '172', '0', null, '5', '1,5,10,', '1502894771', '2017-08-16', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('11', '110', '1', '110', '1', '2', '172', '0', null, '5', '1,5,11,', '1502894790', '2017-08-16', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('12', '111', '1', '111', '1', '7', '172', '0', null, '2', '1,2,12,', '1502899216', '2017-08-17', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('13', '112', '1', '112', '1', '22.35', '172', '0', null, '2', '1,2,13,', '1502899236', '2017-08-17', '1', '38.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('14', '113', '1', '113', '1', '2', '91', '0', null, '12', '1,2,12,14,', null, null, '1', '30.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('15', '114', '1', '114', '1', '21.80', '91', '0', null, '13', '1,2,13,15,', null, null, '1', '30.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('16', '115', '1', '115', '1', '0', '91', '0', null, '15', '1,2,13,15,16,', '1502977631', '2017-08-17', '1', '30.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('17', '116', '1', '116', '1', '2.25', '91', '0', null, '15', '1,2,13,15,17,', '1502977659', '2017-08-17', '1', '30.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('18', '117', '1', '117', '1', '0', '91', '0', null, '17', '1,2,13,15,17,18,', '1502977871', '2017-08-17', '1', '30.00', null, null, null, null, null, null, '0');
-INSERT INTO `p_menber` VALUES ('19', '118', '1', '118', '1', '0', '1.00', '0', null, '17', '1,2,13,15,17,19,', '1502977892', '2017-08-17', '1', '30.00', null, null, null, null, null, null, '0');
+INSERT INTO `p_menber` VALUES ('1', '100', '紫悦城', '1', '100', '1', '1500', '2', '3', '4', '0', '1,', null, null, '1', null, null, '9527', null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('2', '101', '紫悦城', '1', '101', '1', '435.98', '275.00', '0', null, '1', '1,2,', '1502892880', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('3', '102', '紫悦城', '1', '102', '1', '14', '174', '0', null, '1', '1,3,', '1502893254', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('4', '103', '紫悦城', '1', '103', '1', '41.08', '172', '0', null, '1', '1,4,', '1502893292', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('5', '104', '紫悦城', '1', '104', '1', '41', '172', '0', null, '1', '1,5,', '1502893314', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('6', '105', '紫悦城', '1', '105', '1', '6', '172', '0', null, '2', '1,2,6,', '1502893727', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('7', '106', '紫悦城', '1', '106', '1', '6', '172', '0', null, '2', '1,2,7,', '1502893743', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('8', '107', '紫悦城', '1', '107', '1', '2', '172', '0', null, '4', '1,4,8,', '1502894185', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('9', '108', '紫悦城', '1', '108', '1', '2', '172', '0', null, '4', '1,4,9,', '1502894209', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('10', '109', '紫悦城', '1', '109', '1', '2', '172', '0', null, '5', '1,5,10,', '1502894771', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('11', '110', '紫悦城', '1', '110', '1', '2', '172', '0', null, '5', '1,5,11,', '1502894790', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('12', '111', '紫悦城', '1', '111', '1', '7', '172', '0', null, '2', '1,2,12,', '1502899216', '2017-08-17', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('13', '112', '紫悦城', '1', '112', '1', '22.35', '172', '0', null, '2', '1,2,13,', '1502899236', '2017-08-17', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('14', '113', '紫悦城', '1', '113', '1', '2', '91', '0', null, '12', '1,2,12,14,', null, null, '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('15', '114', '紫悦城', '1', '114', '1', '21.80', '91', '0', null, '13', '1,2,13,15,', null, null, '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('16', '115', '紫悦城', '1', '115', '1', '0', '91', '0', null, '15', '1,2,13,15,16,', '1502977631', '2017-08-17', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('17', '116', '紫悦城', '1', '116', '1', '2.25', '91', '0', null, '15', '1,2,13,15,17,', '1502977659', '2017-08-17', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('18', '117', '紫悦城', '1', '117', '1', '0', '91', '0', null, '17', '1,2,13,15,17,18,', '1502977871', '2017-08-17', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('19', '118', '紫悦城', '1', '118', '1', '0', '1.00', '0', null, '17', '1,2,13,15,17,19,', '1502977892', '2017-08-17', '1', null, null, null, null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('20', '1', null, '1', '1', '1', '0', '0', '0', '0', '0', '1,20,', null, null, '1', null, null, '1', null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('21', '1', null, '2', '1', '1', '0', '0', '0', '0', '0', '1,21,', '1504011849', '2017-08-29', '2', null, null, '9', null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('22', '10', '紫悦城', '1', '1', '1', '0', '0', '0', '0', '0', '1,20,22,', '1504012105', '2017-08-29', '1', null, null, '1', null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('23', '1', '紫悦城', '1', '1', '1', '0', '0', '0', '0', '0', '1,20,23,', '1504012149', '2017-08-29', '1', null, null, '1', null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('24', '2', '紫悦城', '2', '122223442', '1', '0', '0', '0', '0', '0', '24,', '1504013311', '2017-08-29', '2', null, null, '2', null, null, null, '0', '0');
 
 -- ----------------------------
 -- Table structure for `p_message`
@@ -185,24 +193,25 @@ CREATE TABLE `p_orderlog` (
   `userid` int(11) NOT NULL COMMENT '用户id',
   `productid` int(11) NOT NULL,
   `productname` varchar(64) DEFAULT NULL,
-  `productmoney` varchar(32) DEFAULT NULL COMMENT '产品带来的利润',
-  `states` int(1) NOT NULL DEFAULT '0' COMMENT '0待支付 1收益中 2已完成',
+  `state` int(1) NOT NULL DEFAULT '0' COMMENT '0待支付 1收益中 2已完成',
   `orderid` varchar(128) NOT NULL COMMENT '订单id',
   `addtime` int(12) DEFAULT NULL,
   `num` int(5) DEFAULT NULL COMMENT '公排数量 购买数量',
-  `prices` varchar(40) DEFAULT NULL COMMENT '购买单价',
+  `price` varchar(40) DEFAULT NULL COMMENT '购买单价',
   `totals` varchar(40) DEFAULT NULL,
   `addymd` date DEFAULT NULL,
   `type` int(2) DEFAULT '1' COMMENT '1下单购买MIF  2公排',
-  `ceng` int(3) DEFAULT NULL COMMENT '公排层数',
-  `bianhao` int(11) DEFAULT NULL COMMENT '公排编号',
+  `addr` varchar(255) DEFAULT NULL,
+  `tel` varchar(100) DEFAULT NULL,
+  `youbian` varchar(100) DEFAULT NULL,
+  `username` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`logid`)
-) ENGINE=MyISAM AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of p_orderlog
 -- ----------------------------
-INSERT INTO `p_orderlog` VALUES ('53', '2', '1', 'MIF', '50', '1', '2', '1502983180', '1', '50', '50', '2017-08-17', '1', null, null);
+INSERT INTO `p_orderlog` VALUES ('54', '1', '2', null, '1', '', '1504016159', '1', '500', '500', '2017-08-29', '1', '重庆花花村子', '18883287642', '3423456', '李大爷');
 
 -- ----------------------------
 -- Table structure for `p_product`
