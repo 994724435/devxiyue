@@ -50,11 +50,10 @@
 				<div class="head_box">
 					<img src="{$curlurl}/Public/Home/img/mall_2.png" class="topHead lazyload" />
 				</div>
-				<div class="head_gold">
-					<div class="gold_number"><span class="pic_gold"></span><span id="gold_number">111</span></div>
-					<div class="gold_number"><span class="pic_safe"></span><span id="goldd_number">111</span></div>
-
-				</div>
+				<!--<div class="head_gold">-->
+					<!--<div class="gold_number"><span class="pic_gold"></span><span id="gold_number">111</span></div>-->
+					<!--<div class="gold_number"><span class="pic_safe"></span><span id="goldd_number">111</span></div>-->
+				<!--</div>-->
 			</div>
 		</div>
 		<!--头部 end-->
@@ -200,11 +199,11 @@
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">手续费</span>
-							<input type="text" name="souxu"  value="<?php echo $username['xiyue']*0.1 ?> " readonly = "readonly" id="shouxu" />
+							<input type="text" name="souxu"  value="<?php echo 0.1 ?> " readonly = "readonly" id="shouxu" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">银行信托基金</span>
-							<input type="text" name="jijin" readonly = "readonly" value="<?php echo $username['xiyue']*0.1 ?>" id="yinhang"  />
+							<input type="text" name="jijin" readonly = "readonly" value="<?php echo 0.1 ?>" id="yinhang"  />
 						</li>
 
 					</ul>
@@ -294,21 +293,19 @@
 				</div>
 				<div class="main_pop_body">
 				    <table class="liushui">
+						<foreach name="income" item='v'>
 					   	<tr>
-					   		<td>开商铺</td>
-					   		<td>1200</td>
-					   		<td style="width: 50%;">2015-3-3 12:00:00</td>
+					   		<td>{$v.reson}</td>
+					   		<td>{$v.income}</td>
+					   		<td style="width: 50%;"><?php echo date('Y-m-d H:i:s',$v['addtime']) ?></td>
 					   	</tr>
-					   		<tr>
-					   		<td>开商铺</td>
-					   		<td>1200</td>
-					   		<td style="width: 50%;">2015-3-3 12:00:00</td>
-					   	</tr>
-					   		<tr>
-					   		<td>开商铺</td>
-					   		<td>1200</td>
-					   		<td style="width: 50%;">2015-3-3 12:00:00</td>
-					   	</tr>
+						</foreach>
+					   		<!--<tr>-->
+					   		<!--<td>开商铺</td>-->
+					   		<!--<td>1200</td>-->
+					   		<!--<td style="width: 50%;">2015-3-3 12:00:00</td>-->
+					   	<!--</tr>-->
+					   <!---->
 				    </table>
 				  
 				</div>
@@ -577,27 +574,28 @@
 					   		</ul>
 					   	</li>
 				    </ul>
+					<form action="{:U('index.php/Home/Index/caiwu')}" method="post" enctype="multipart/form-data">
 				    <ul class="main_com_body1 main_com_body" id="duihuan">
 						<li class="main_com_li">
 							<span class="main_com_li_left">货品兑换喜悦币:</span>
-							<input type="text" value="1" class="huobi" /> : <input type="text" value="0.7" disabled="disabled" class="xiyuebi" />
+							<input type="text" value="1" name="huobi" class="huobi" /> : <input type="text" name="huobilv"  value="1" readonly = "readonly" class="xiyuebi" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">喜悦币兑换货品:</span>
-							<input type="text" value="1" class="xiyuebi1" /> : <input type="text" value="1" disabled="disabled" class="huobi1" />
+							<input type="text" value="1" name="xiyuebi1" class="xiyuebi1" /> : <input type="text" name="xiyuebi1lv" value="1" readonly = "readonly" class="huobi1" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left" style="font-size: 12px;">货品兑换商城积分:</span>
-							<input type="text" value="1" class="huobi2" /> : <input type="text" value="0.7" disabled="disabled" class="jifen" />
+							<input type="text" value="1" name="huobi2" class="huobi2" /> : <input type="text" name="huobi2lv" value="0.7" readonly = "readonly" class="jifen" />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left" style="font-size: 12px;">喜悦币兑换商城积分:</span>
-							<input type="text" value="1" class="xiyuebi2" /> : <input type="text" value="1" disabled="disabled" class="jifen1" />
+							<input type="text" value="1" name="xiyuebi2" class="xiyuebi2" /> : <input type="text" name="xiyuebi2lv" value="1" readonly = "readonly" class="jifen1" />
 						</li>
 					     <button class="setSwithBtn main_com addBtn">确认兑换</button>
 
 					</ul>
-				  
+					</form>
 				</div>
 			</div>
 		</div>
@@ -657,19 +655,21 @@
 					<span class="main_close"></span>
 				</div>
 				<div class="main_pop_body setUp qiehuan">
-				    <form action="">
+
+					<form action="{:U('index.php/Home/Index/updatepwd')}" method="post" enctype="multipart/form-data">
 					<ul class="main_com_body1 main_com_body">
 						<li class="main_com_li">
+							<input type="hidden" name="one" value="1" />
 							<span class="main_com_li_left">旧一级密码:</span>
-							<input type="password" name=""  />
+							<input type="password" name="oldone"  />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">新一级密码:</span>
-							<input type="password" name=""  />
+							<input type="password" name="newone1"  />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">重复新一级密码:</span>
-							<input type="password" name=""  />
+							<input type="password" name="newone2"  />
 						</li>
 						
 					</ul>
@@ -685,19 +685,20 @@
 					<span class="main_close"></span>
 				</div>
 				<div class="main_pop_body setUp qiehuan">
-				    <form action="">
+					<form action="{:U('index.php/Home/Index/updatepwd')}" method="post" enctype="multipart/form-data">
 					<ul class="main_com_body1 main_com_body">
 						<li class="main_com_li">
 							<span class="main_com_li_left">旧二级密码:</span>
-							<input type="password" name=""  />
+							<input type="hidden" name="two" value="1" />
+							<input type="password" name="oldtwo"  />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">新二级密码:</span>
-							<input type="password" name=""  />
+							<input type="password" name="newtwo1"  />
 						</li>
 						<li class="main_com_li">
 							<span class="main_com_li_left">重复新二级密码:</span>
-							<input type="password" name=""  />
+							<input type="password" name="newtwo2"  />
 						</li>
 						
 					</ul>

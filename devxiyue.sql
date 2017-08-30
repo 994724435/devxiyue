@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2017-08-29 22:24:55
+Date: 2017-08-30 22:09:29
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -81,7 +81,7 @@ INSERT INTO `p_config` VALUES ('19', '动态提现手续费', '0.1', '动态提�
 DROP TABLE IF EXISTS `p_incomelog`;
 CREATE TABLE `p_incomelog` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `type` int(11) DEFAULT '1' COMMENT '1收益 2充值 3静态提现  4动态体现  5 注册下级 6下单购买 7退本 8静态转账 9动态转账 10静态收益 11 动态收益',
+  `type` int(11) DEFAULT '1' COMMENT '1收益 2充值 3提现 4钱包互转  5 注册下级 6下单购买  8转账 ',
   `state` int(11) DEFAULT '1' COMMENT '1收入   2支出 3失败',
   `reson` varchar(255) DEFAULT NULL COMMENT '原因',
   `addymd` date DEFAULT NULL,
@@ -91,17 +91,21 @@ CREATE TABLE `p_incomelog` (
   `income` varchar(64) DEFAULT '0' COMMENT '金额',
   `cont` varchar(1000) NOT NULL COMMENT '后台备注',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=467 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=475 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of p_incomelog
 -- ----------------------------
-INSERT INTO `p_incomelog` VALUES ('461', '6', '2', '下单购买', '2017-08-17', '1502983180', '2', '2', '50', '');
-INSERT INTO `p_incomelog` VALUES ('462', '11', '1', '下级购买MIF', '2017-08-17', '1502983180', '2', '1', '2.50', '1');
-INSERT INTO `p_incomelog` VALUES ('463', '10', '1', '静态收益', '2017-08-17', '1502983248', '53', '2', '15.0', '');
-INSERT INTO `p_incomelog` VALUES ('464', '10', '1', '静态收益', '2017-08-18', '1503064232', '53', '2', '15.0', '');
 INSERT INTO `p_incomelog` VALUES ('465', '5', '2', '注册下级', '2017-08-29', '1504013311', '24', '1', '800', '');
 INSERT INTO `p_incomelog` VALUES ('466', '6', '2', '注册下级', '2017-08-29', '1504016159', '0', '1', '500', '');
+INSERT INTO `p_incomelog` VALUES ('467', '8', '0', '转账交易', '2017-08-30', '1504098752', null, '1', '', '');
+INSERT INTO `p_incomelog` VALUES ('468', '8', '0', '转账交易', '2017-08-30', '1504098896', '2', '1', '1', 'asdad');
+INSERT INTO `p_incomelog` VALUES ('469', '4', '1', '货品兑换喜悦币', '2017-08-30', '1504100782', '1639', '1', '10', '');
+INSERT INTO `p_incomelog` VALUES ('470', '4', '1', '货品兑换喜悦币', '2017-08-30', '1504100968', '1646', '1', '10', '');
+INSERT INTO `p_incomelog` VALUES ('471', '4', '1', '喜悦币兑换货品', '2017-08-30', '1504101305', '10', '1', '10', '');
+INSERT INTO `p_incomelog` VALUES ('472', '4', '1', '货品兑换商城积分', '2017-08-30', '1504101557', '10', '1', '10', '');
+INSERT INTO `p_incomelog` VALUES ('473', '4', '1', '喜悦币兑换商城积分', '2017-08-30', '1504101838', '10', '1', '10', '');
+INSERT INTO `p_incomelog` VALUES ('474', '4', '1', '喜悦币兑换货品', '2017-08-30', '1504101879', '10', '1', '10', '');
 
 -- ----------------------------
 -- Table structure for `p_menber`
@@ -137,7 +141,7 @@ CREATE TABLE `p_menber` (
 -- ----------------------------
 -- Records of p_menber
 -- ----------------------------
-INSERT INTO `p_menber` VALUES ('1', '100', '紫悦城', '1', '100', '1', '1500', '2', '3', '4', '0', '1,', null, null, '1', null, null, '9527', null, null, null, '0', '0');
+INSERT INTO `p_menber` VALUES ('1', '100', '紫悦城', '2', '100', '1', '1616', '10', '20', '4', '0', '1,', null, null, '3', null, null, '9527', null, null, null, '0', '0');
 INSERT INTO `p_menber` VALUES ('2', '101', '紫悦城', '1', '101', '1', '435.98', '275.00', '0', null, '1', '1,2,', '1502892880', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
 INSERT INTO `p_menber` VALUES ('3', '102', '紫悦城', '1', '102', '1', '14', '174', '0', null, '1', '1,3,', '1502893254', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');
 INSERT INTO `p_menber` VALUES ('4', '103', '紫悦城', '1', '103', '1', '41.08', '172', '0', null, '1', '1,4,', '1502893292', '2017-08-16', '1', null, null, null, null, null, null, '0', '0');

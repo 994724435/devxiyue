@@ -140,9 +140,268 @@ class IndexController extends CommonController {
     }
 
     public function jiaoyi(){
-        print_r($_POST);die;
+        if($_POST){
+            $data= $_POST;
+            foreach ($data as $v){
+                if(empty($v)){
+                    echo "<script>alert('请将信息填写完整');";
+                    echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                    echo "</script>";
+                    exit();
+                }
+            }
+
+            $menber = M('menber');
+            $userinfoother = $menber->where(array('tel'=>$_POST['tel']))->select();
+            if($userinfoother[0]['name'] != $_POST['name']){
+                echo "<script>alert('账号信息不正确');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit;
+            }
+
+            $lilv = bcadd($_POST['souxu'],$_POST['jijin'],2);
+            $lilvs =bcadd($lilv,1,2);
+            $res_all = bcmul($lilvs,$_POST['num']);
+
+            if($_POST['xiyue'] < (int)$res_all){
+                echo "<script>alert('账户余额不足');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit;
+            }
+
+            // 处理收入
+            $userinfo = $menber->where(array('uid'=>session('uid')))->select();
+            $xiyue= bcsub($userinfo[0]['xiyue'],$_POST['num']) ;
+            $menber->where(array('uid'=>session('uid')))->save(array('xiyue'=>$xiyue));
+
+            //处理注册余额
+            $income['type'] = 8;
+            $income['state'] = 0;
+            $income['reson'] = "转账交易";
+            $income['addymd'] = date("Y-m-d H:i:s",time());
+            $income['addtime'] = time();
+            $income['orderid'] = $userinfoother[0]['uid'];
+            $income['userid'] = session('uid');
+            $income['income'] = $_POST['num'];
+            $income['cont'] = $_POST['weixin'];
+            M('incomelog')->add($income);
+
+            echo "<script>alert('信息提交成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit;
+        }
+
     }
 
+    public function updatepwd(){
+        $menber = M('menber');
+        $userinfo = $menber->where(array('uid'=>session('uid')))->select();
+        if($_POST['one']){
+            $data= $_POST;
+            foreach ($data as $v){
+                if(empty($v)){
+                    echo "<script>alert('请将信息填写完整');";
+                    echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                    echo "</script>";
+                    exit();
+                }
+            }
+
+            if($_POST['oldone'] != $userinfo[0]['pwd']){
+                echo "<script>alert('密码输入错误');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            if($_POST['newone1'] != $_POST['newone2']){
+                echo "<script>alert('新密码输入不一致');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            $menber->where(array('uid'=>session('uid')))->save(array('pwd'=>$_POST['newone1']));
+            echo "<script>alert('密码修改成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit();
+        }
+
+        // 二级密码
+        if($_POST['two']){
+            $data= $_POST;
+            foreach ($data as $v){
+                if(empty($v)){
+                    echo "<script>alert('请将信息填写完整');";
+                    echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                    echo "</script>";
+                    exit();
+                }
+            }
+
+            if($_POST['oldtwo'] != $userinfo[0]['pwd2']){
+                echo "<script>alert('密码输入错误');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            if($_POST['newtwo1'] != $_POST['newtwo2']){
+                echo "<script>alert('新密码输入不一致');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            $menber->where(array('uid'=>session('uid')))->save(array('pwd2'=>$_POST['newtwo2']));
+            echo "<script>alert('密码修改成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit();
+        }
+
+    }
+
+    public function caiwu(){
+
+        $menber = M('menber');
+        $userinfo = $menber->where(array('uid'=>session('uid')))->select();
+        if($_POST['huobi']!=1 && $_POST['huobi']>0){ // 货币转喜悦
+            if($userinfo[0]['huoping'] < $_POST['huobi']){
+                echo "<script>alert('货币余额不足');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            // 处理收入
+            $huoping= bcsub($userinfo[0]['huoping'],$_POST['huobi'],2) ;
+            $menber->where(array('uid'=>session('uid')))->save(array('huoping'=>round($huoping)));
+
+            $afxiyue = bcadd($userinfo[0]['xiyue'],$_POST['huobilv'],2);
+            $menber->where(array('uid'=>session('uid')))->save(array('xiyue'=>round($afxiyue)));
+
+            //处理日志
+            $income['type'] = 4;
+            $income['state'] = 1;
+            $income['reson'] = "货品兑换喜悦币";
+            $income['addymd'] = date("Y-m-d H:i:s",time());
+            $income['addtime'] = time();
+            $income['orderid'] =round($_POST['huobilv']);
+            $income['userid'] = session('uid');
+            $income['income'] = $_POST['huobi'];
+            M('incomelog')->add($income);
+
+            echo "<script>alert('互转成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit;
+        }
+
+        if($_POST['xiyuebi1']!=1 && $_POST['xiyuebi1']>0){ // 喜悦币兑换货品
+            if($userinfo[0]['xiyue'] < $_POST['xiyuebi1']){
+                echo "<script>alert('喜悦币余额不足');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            // 处理收入
+            $xiyue= bcsub($userinfo[0]['xiyue'],$_POST['xiyuebi1'],2) ;
+            $menber->where(array('uid'=>session('uid')))->save(array('xiyue'=>round($xiyue)));
+
+            $huoping = bcadd($userinfo[0]['huoping'],$_POST['xiyuebi1lv'],2);
+            $menber->where(array('uid'=>session('uid')))->save(array('huoping'=>round($huoping)));
+
+            //处理日志
+            $income['type'] = 4;
+            $income['state'] = 1;
+            $income['reson'] = "喜悦币兑换货品";
+            $income['addymd'] = date("Y-m-d H:i:s",time());
+            $income['addtime'] = time();
+            $income['orderid'] =round($_POST['xiyuebi1lv']);
+            $income['userid'] = session('uid');
+            $income['income'] = $_POST['xiyuebi1'];
+            M('incomelog')->add($income);
+
+            echo "<script>alert('互转成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit;
+        }
+
+        // 货品兑换商城积分
+
+        if($_POST['huobi2']!=1 && $_POST['huobi2']>0){
+            if($userinfo[0]['huoping'] < $_POST['huobi2']){
+                echo "<script>alert('货品余额不足');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            // 处理收入
+            $xiyue= bcsub($userinfo[0]['huoping'],$_POST['huobi2'],2) ;
+            $menber->where(array('uid'=>session('uid')))->save(array('huoping'=>round($xiyue)));
+
+            $huoping = bcadd($userinfo[0]['jifeng'],$_POST['huobi2lv'],2);
+            $menber->where(array('uid'=>session('uid')))->save(array('jifeng'=>round($huoping)));
+
+            //处理日志
+            $income['type'] = 4;
+            $income['state'] = 1;
+            $income['reson'] = "货品兑换商城积分";
+            $income['addymd'] = date("Y-m-d H:i:s",time());
+            $income['addtime'] = time();
+            $income['orderid'] =round($_POST['huobi2lv']);
+            $income['userid'] = session('uid');
+            $income['income'] = $_POST['huobi2'];
+            M('incomelog')->add($income);
+
+            echo "<script>alert('互转成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit;
+        }
+
+        // 喜悦币兑换商城积分
+        if($_POST['xiyuebi2']!=1 && $_POST['xiyuebi2']>0){
+            if($userinfo[0]['xiyue'] < $_POST['xiyuebi2']){
+                echo "<script>alert('喜悦币余额不足');";
+                echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+                echo "</script>";
+                exit();
+            }
+
+            // 处理收入
+            $xiyue= bcsub($userinfo[0]['xiyue'],$_POST['xiyuebi2'],2) ;
+            $menber->where(array('uid'=>session('uid')))->save(array('xiyue'=>round($xiyue)));
+
+            $huoping = bcadd($userinfo[0]['jifeng'],$_POST['xiyuebi2lv'],2);
+            $menber->where(array('uid'=>session('uid')))->save(array('jifeng'=>round($huoping)));
+
+            //处理日志
+            $income['type'] = 4;
+            $income['state'] = 1;
+            $income['reson'] = "喜悦币兑换商城积分";
+            $income['addymd'] = date("Y-m-d H:i:s",time());
+            $income['addtime'] = time();
+            $income['orderid'] =round($_POST['xiyuebi2lv']);
+            $income['userid'] = session('uid');
+            $income['income'] = $_POST['xiyuebi2'];
+            M('incomelog')->add($income);
+
+            echo "<script>alert('互转成功');";
+            echo "window.location.href='".__ROOT__."/index.php/Home/Index/main';";
+            echo "</script>";
+            exit;
+        }
+
+    }
 
     public function buy(){
         if($_POST){
