@@ -30,6 +30,7 @@ class MenberController extends CommonController {
     public function charge(){
         $menber = M('menber');
         $users= $menber->select();
+
         if($_POST['user']&&$_POST['num']){
             if($_POST['num']<=0){
                 echo "<script>alert('请输入正确金额');window.location.href = '".__ROOT__."/index.php/Admin/Menber/charge';</script>";exit();
@@ -39,8 +40,8 @@ class MenberController extends CommonController {
                 echo "<script>alert('用户不存在');window.location.href = '".__ROOT__."/index.php/Admin/Menber/charge';</script>";exit();
             }
 
-            $chargebag= $user[0]['chargebag']+$_POST['num'];
-            $res = $menber->where(array('tel'=>$_POST['user']))->save(array('chargebag'=>$chargebag));
+            $chargebag= $user[0]['xiyue']+$_POST['num'];
+            $res = $menber->where(array('tel'=>$_POST['user']))->save(array('xiyue'=>$chargebag));
 
             $datas['state'] = 1;
             $datas['reson'] = "充值";
@@ -61,6 +62,40 @@ class MenberController extends CommonController {
             }
 
         }
+
+        if($_POST['user']&&$_POST['jian']){
+            if($_POST['jian']<=0){
+                echo "<script>alert('请输入正确金额');window.location.href = '".__ROOT__."/index.php/Admin/Menber/charge';</script>";exit();
+            }
+            $user = $menber->where(array('tel'=>$_POST['user']))->select();
+            if(!$user[0]){
+                echo "<script>alert('用户不存在');window.location.href = '".__ROOT__."/index.php/Admin/Menber/charge';</script>";exit();
+            }
+
+            $chargebag= bcsub($user[0]['xiyue'],$_POST['jian']);
+            $res = $menber->where(array('tel'=>$_POST['user']))->save(array('xiyue'=>$chargebag));
+
+            $datas['state'] = 2;
+            $datas['reson'] = "管理员扣除";
+            $datas['type'] = 2;
+            $datas['addymd'] = date('Y-m-d',time());
+            $datas['addtime'] = date('Y-m-d H:i:s',time());
+            $datas['orderid'] = $_SESSION['uname'];
+            $datas['userid'] = $user[0]['uid'];
+            $datas['income'] = $_POST['jian'];
+            $comelog =M('incomelog');
+            $comelog->add($datas);
+            if($res){
+                $message =$user[0]['name'].'被扣除'.$_POST['jian'].'元';
+                echo "<script>alert('$message');";
+                echo "window.location.href = '".__ROOT__."/index.php/Admin/Menber/charge';";
+                echo "</script>";
+                exit;
+            }
+
+        }
+
+
         $this->assign('users',$users);
         $this->display();
     }

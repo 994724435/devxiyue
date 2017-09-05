@@ -1,7 +1,7 @@
 var arrlist =  JSON.parse(localStorage.getItem("arrlist"));
 //----加载-----
 var n = 0;
-var pic_load = ["http://localhost/devxiyue/Public/Home/img/bg.png", "__ROOT__/Public/Home/img/back_pic.png", "__ROOT__/Public/Home/img/background.png", "__ROOT__/Public/Home/img/barbg.gif", "__ROOT__/Public/Home/img/bed.png", "__ROOT__/Public/Home/img/block.png", "__ROOT__/Public/Home/img/boult.png", "__ROOT__/Public/Home/img/building.png", "__ROOT__/Public/Home/img/choose_left.png", "__ROOT__/Public/Home/img/choose_right.png", "__ROOT__/Public/Home/img/code.png", "__ROOT__/Public/Home/img/moto.png", "__ROOT__/Public/Home/img/enter.png", "__ROOT__/Public/Home/img/email.png", "__ROOT__/Public/Home/img/gold.png", "__ROOT__/Public/Home/img/green.png", "__ROOT__/Public/Home/img/maidi.png", "__ROOT__/Public/Home/img/main_bootom_add.png", "__ROOT__/Public/Home/img/main_firm.png", "__ROOT__/Public/Home/img/people1.png", "__ROOT__/Public/Home/img/people2.png", "__ROOT__/Public/Home/img/people3.png", "__ROOT__/Public/Home/img/main_shop.png", "__ROOT__/Public/Home/img/main_task.png", "__ROOT__/Public/Home/img/wait.gif", "__ROOT__/Public/Home/img/shop.png", "__ROOT__/Public/Home/img/mall_101.png", "__ROOT__/Public/Home/img/mall_102.png", "__ROOT__/Public/Home/img/mall_103.png", "__ROOT__/Public/Home/img/mall_104.png", "__ROOT__/Public/Home/img/mall_105.png", "__ROOT__/Public/Home/img/staff.png", "__ROOT__/Public/Home/img/staff1_pic.png", "__ROOT__/Public/Home/img/staff2_pic.png", "__ROOT__/Public/Home/img/staff3_pic.png", "__ROOT__/Public/Home/img/carw.png", "__ROOT__/Public/Home/img/pic_gold.png", "__ROOT__/Public/Home/img/carbb.png", "__ROOT__/Public/Home/img/pic_safe.png"];
+var pic_load = ["http://366757.ouyouhui.com/Public/Home/img/bg.png", "http://366757.ouyouhui.com/Public/Home/img/back_pic.png", "http://366757.ouyouhui.com/Public/Home/img/background.png", "http://366757.ouyouhui.com/Public/Home/img/barbg.gif", "http://366757.ouyouhui.com/Public/Home/img/bed.png", "http://366757.ouyouhui.com/Public/Home/img/block.png", "http://366757.ouyouhui.com/Public/Home/img/boult.png", "http://366757.ouyouhui.com/Public/Home/img/building.png", "http://366757.ouyouhui.com/Public/Home/img/choose_left.png", "http://366757.ouyouhui.com/Public/Home/img/choose_right.png", "http://366757.ouyouhui.com/Public/Home/img/code.png", "http://366757.ouyouhui.com/Public/Home/img/moto.png", "http://366757.ouyouhui.com/Public/Home/img/enter.png", "http://366757.ouyouhui.com/Public/Home/img/email.png", "http://366757.ouyouhui.com/Public/Home/img/gold.png", "http://366757.ouyouhui.com/Public/Home/img/green.png", "http://366757.ouyouhui.com/Public/Home/img/maidi.png", "http://366757.ouyouhui.com/Public/Home/img/main_bootom_add.png", "http://366757.ouyouhui.com/Public/Home/img/main_firm.png", "http://366757.ouyouhui.com/Public/Home/img/people1.png", "http://366757.ouyouhui.com/Public/Home/img/people2.png", "http://366757.ouyouhui.com/Public/Home/img/people3.png", "http://366757.ouyouhui.com/Public/Home/img/main_shop.png", "http://366757.ouyouhui.com/Public/Home/img/main_task.png", "http://366757.ouyouhui.com/Public/Home/img/wait.gif", "http://366757.ouyouhui.com/Public/Home/img/shop.png", "http://366757.ouyouhui.com/Public/Home/img/mall_101.png", "http://366757.ouyouhui.com/Public/Home/img/mall_102.png", "http://366757.ouyouhui.com/Public/Home/img/mall_103.png", "http://366757.ouyouhui.com/Public/Home/img/mall_104.png", "http://366757.ouyouhui.com/Public/Home/img/mall_105.png", "http://366757.ouyouhui.com/Public/Home/img/staff.png", "http://366757.ouyouhui.com/Public/Home/img/staff1_pic.png", "http://366757.ouyouhui.com/Public/Home/img/staff2_pic.png", "http://366757.ouyouhui.com/Public/Home/img/staff3_pic.png", "http://366757.ouyouhui.com/Public/Home/img/carw.png", "http://366757.ouyouhui.com/Public/Home/img/pic_gold.png", "http://366757.ouyouhui.com/Public/Home/img/carbb.png", "http://366757.ouyouhui.com/Public/Home/img/pic_safe.png"];
 for(var i = 0; i < pic_load.length; i++) {
 	var imgStr = pic_load[i];
 	var oneImg = new Image();
@@ -62,7 +62,7 @@ $('.main_game_bland').click(function() {
 	var main_game_bland = $(this).index();
 	$(".box").val($(this).index());
 	if($(this).find(".build_img").attr("src") != "") {
-		if($(this).find(".build_img").attr("src") == "__ROOT__/Public/Home/img_b/0.png") {
+		if($(this).find(".build_img").attr("src") == "http://366757.ouyouhui.com/Public/Home/img_b/0.png") {
 
 			$(".choose_shop").show();
 			return false
@@ -374,7 +374,7 @@ $(".industry").on("click", ".industry_li", function() {
 	var fid = $(".box").val();
 	var id = JSON.parse(localStorage.getItem("yuangongid"))[aa];
 	var ygtype = $(".ygtype").eq($(this).index()).val();
-	$(".staffIn_li1").find("img").attr("src","__ROOT__/Public/Home/img/head0"+ygtype+".png")
+	$(".staffIn_li1").find("img").attr("src","http://366757.ouyouhui.com/Public/Home/img/head0"+ygtype+".png")
 	
 	info(id);
 	$(".staffOut").on("click", function() {
@@ -444,14 +444,14 @@ var top3 = "top";
 		css.left = '6.32rem';
 		css.top = '2.3rem';
 		$(".carogold").css({
-			"background": "url(__ROOT__/Public/Home/img/cary.png) no-repeat",
+			"background": "url(http://366757.ouyouhui.com/Public/Home/img/cary.png) no-repeat",
 			"background-size": "100% 100%"
 		});
 	} else {
 		right3 = 'right';
 		top3 = 'top';
 		$(".carogold").css({
-			"background": "url(__ROOT__/Public/Home/img/carry.png) no-repeat",
+			"background": "url(http://366757.ouyouhui.com/Public/Home/img/carry.png) no-repeat",
 			"background-size": "100% 100%"
 		});
 	}

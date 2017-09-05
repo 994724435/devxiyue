@@ -108,11 +108,8 @@ $(".myHuoguiMask .setUp_return").click(function() {
 
 // 金币开通
 $(".openjinbi").click(function() {
-
 	var id=Number($(this).attr("data-id"));
 	var that=$("#jinbTitle").get(0);
-	$("#jinbTitle").attr("data-id",id);
-	$("#jinbID").val(id);
 	switch(id) {
 		case 1:
 			 $(that).html("一号货柜金币开通")
@@ -130,8 +127,8 @@ $(".openjinbi").click(function() {
 			 $(that).html("五号货柜金币开通")
 			break;
 	}
+	$("#zmdID").val(id);
 	$(".jinbiMask").show()
-	
 
 });
 $(".jinbiMask .setUp_return").click(function() {
@@ -143,7 +140,6 @@ $(".jinbiMask .setUp_return").click(function() {
 $(".openZmd").click(function() {
 	var id=Number($(this).attr("data-id"));
 	var that=$("#zmdTitle").get(0);
-	$("#zmdTitle").attr("data-id",id);
 	switch(id) {
 		case 1:
 			 $(that).html("一号货柜知名度开通")
@@ -277,14 +273,4 @@ $("#logout").click(function() {
 
 $(".openShop").click(function() {
     window.location = "http://366757.ouyouhui.com/index.php/Home/Index/dealshop";
-});
-
-
-
-// 才分关闭
-$("#openCaifen").click(function() {
-	$(".caifenMask").show();
-});
-$(".caifenMask .main_close").click(function() {
-	$(".caifenMask").hide();
 });

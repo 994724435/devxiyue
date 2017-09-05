@@ -198,23 +198,23 @@ html,body{
 }
 
 .main_foot .main_change_ren{
-	background: url(http://localhost/devxiyue/Public/Home/img/main_task.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/main_task.png) no-repeat;
 	background-size: 100% 100%;
 }
 .main_foot .main_change_company{
-	background: url(http://localhost/devxiyue/Public/Home/img/main_firm.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/main_firm.png) no-repeat;
 	background-size: 100% 100%;
 }
 .main_foot .main_change_shop{
-	background: url(http://localhost/devxiyue/Public/Home/img/main_shop.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/main_shop.png) no-repeat;
 	background-size: 100% 100%;
 }
 .main_foot .main_change_yuan{
-	background: url(http://localhost/devxiyue/Public/Home/img/main_worker.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/main_worker.png) no-repeat;
 	background-size: 100% 100%;
 }
 .main_foot .main_change_so{
-	background: url(http://localhost/devxiyue/Public/Home/img/main_bootom_add.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/main_bootom_add.png) no-repeat;
 	background-size: 100% 100%;
 }
 
@@ -227,7 +227,7 @@ html,body{
     height: 0.24rem;
 }
 .moto{
-	background: url(http://localhost/devxiyue/Public/Home/img/moto.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/moto.png) no-repeat;
 	background-size: 100% 100%;
 	position: absolute;
 	z-index: 2;
@@ -239,7 +239,7 @@ html,body{
 .carred{
     width: 0.28rem;
     height: 0.22rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/carr.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/carr.png) no-repeat;
 	background-size: 100% 100%;
 	top: 2.3rem;
     left: 2.55rem;
@@ -249,75 +249,75 @@ html,body{
 	-ms-animation: carred 40s linear  infinite;
 }
 @keyframes carred{
-	0%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png); }
-	15%{top: 3.12rem; left:1.16rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png);}
-	16%{top: 3.12rem; left:1.16rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	30%{top: 2.5rem; left: 0.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	31%{top: 2.5rem; left: 0.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr2.png)}
-	45%{top: 3.86rem; left:2.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr2.png)}
-	46%{top: 3.86rem; left:2.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	60%{top: 3.12rem; left:1.06rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	61%{top: 3.18rem; left:1.0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
-	75%{top: 3.8rem; left:0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
-	76%{top: 3.8rem; left:0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carrd.png)}
-	98%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carrd.png)}
-	100%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
+	0%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png); }
+	15%{top: 3.12rem; left:1.16rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png);}
+	16%{top: 3.12rem; left:1.16rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	30%{top: 2.5rem; left: 0.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	31%{top: 2.5rem; left: 0.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr2.png)}
+	45%{top: 3.86rem; left:2.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr2.png)}
+	46%{top: 3.86rem; left:2.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	60%{top: 3.12rem; left:1.06rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	61%{top: 3.18rem; left:1.0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
+	75%{top: 3.8rem; left:0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
+	76%{top: 3.8rem; left:0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carrd.png)}
+	98%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carrd.png)}
+	100%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
 	
 }
 @-moz-keyframes carred{
-	0%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png); }
-	15%{top: 3.12rem; left:1.16rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png);}
-	16%{top: 3.12rem; left:1.16rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	30%{top: 2.5rem; left: 0.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	31%{top: 2.5rem; left: 0.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr2.png)}
-	45%{top: 3.86rem; left:2.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr2.png)}
-	46%{top: 3.86rem; left:2.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	60%{top: 3.12rem; left:1.06rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	61%{top: 3.18rem; left:1.0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
-	75%{top: 3.8rem; left:0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
-	76%{top: 3.8rem; left:0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carrd.png)}
-	98%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carrd.png)}
-	100%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
+	0%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png); }
+	15%{top: 3.12rem; left:1.16rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png);}
+	16%{top: 3.12rem; left:1.16rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	30%{top: 2.5rem; left: 0.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	31%{top: 2.5rem; left: 0.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr2.png)}
+	45%{top: 3.86rem; left:2.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr2.png)}
+	46%{top: 3.86rem; left:2.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	60%{top: 3.12rem; left:1.06rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	61%{top: 3.18rem; left:1.0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
+	75%{top: 3.8rem; left:0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
+	76%{top: 3.8rem; left:0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carrd.png)}
+	98%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carrd.png)}
+	100%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
 }
 @-webkit-keyframes carred{
-	0%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png); }
-	15%{top: 3.12rem; left:1.16rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png);}
-	16%{top: 3.12rem; left:1.16rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	30%{top: 2.5rem; left: 0.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	31%{top: 2.5rem; left: 0.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr2.png)}
-	45%{top: 3.86rem; left:2.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr2.png)}
-	46%{top: 3.86rem; left:2.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	60%{top: 3.12rem; left:1.06rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	61%{top: 3.18rem; left:1.0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
-	75%{top: 3.8rem; left:0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
-	76%{top: 3.8rem; left:0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carrd.png)}
-	98%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carrd.png)}
-	100%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
+	0%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png); }
+	15%{top: 3.12rem; left:1.16rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png);}
+	16%{top: 3.12rem; left:1.16rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	30%{top: 2.5rem; left: 0.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	31%{top: 2.5rem; left: 0.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr2.png)}
+	45%{top: 3.86rem; left:2.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr2.png)}
+	46%{top: 3.86rem; left:2.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	60%{top: 3.12rem; left:1.06rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	61%{top: 3.18rem; left:1.0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
+	75%{top: 3.8rem; left:0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
+	76%{top: 3.8rem; left:0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carrd.png)}
+	98%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carrd.png)}
+	100%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
 }
 @-ms-keyframes carred{
-	0%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png); }
-	15%{top: 3.12rem; left:1.16rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png);}
-	16%{top: 3.12rem; left:1.16rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	30%{top: 2.5rem; left: 0.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	31%{top: 2.5rem; left: 0.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr2.png)}
-	45%{top: 3.86rem; left:2.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr2.png)}
-	46%{top: 3.86rem; left:2.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	60%{top: 3.12rem; left:1.06rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr1.png)}
-	61%{top: 3.18rem; left:1.0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
-	75%{top: 3.8rem; left:0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
-	76%{top: 3.8rem; left:0rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carrd.png)}
-	98%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carrd.png)}
-	100%{top: 2.3rem; left: 2.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carr.png)}
+	0%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png); }
+	15%{top: 3.12rem; left:1.16rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png);}
+	16%{top: 3.12rem; left:1.16rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	30%{top: 2.5rem; left: 0.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	31%{top: 2.5rem; left: 0.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr2.png)}
+	45%{top: 3.86rem; left:2.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr2.png)}
+	46%{top: 3.86rem; left:2.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	60%{top: 3.12rem; left:1.06rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr1.png)}
+	61%{top: 3.18rem; left:1.0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
+	75%{top: 3.8rem; left:0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
+	76%{top: 3.8rem; left:0rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carrd.png)}
+	98%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carrd.png)}
+	100%{top: 2.3rem; left: 2.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carr.png)}
 }
 .carogold{
-    background: url(http://localhost/devxiyue/Public/Home/img/cary.png) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img/cary.png) no-repeat;
     background-size: 100% 100%;
     top: 3.8rem;
     left: 4rem;
 }
 
 .carorage{
-    background: url(http://localhost/devxiyue/Public/Home/img/card.png) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img/card.png) no-repeat;
     background-size: 100% 100%;
     top: 3.92rem;
     left: 6.3rem;
@@ -327,96 +327,96 @@ html,body{
 	-ms-animation: carorage 40s linear  infinite;
 }
 @keyframes carorage{
-	0%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png); }
-	15%{top: 3.2rem; left:5.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png);}
-	16%{top: 3.2rem; left:5.06rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	30%{top: 3.74rem; left: 4.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	34%{top: 3.78rem; left: 4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	45%{top: 2.3rem; left:6.36rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	46%{top: 2.3rem; left:6.36rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	60%{top: 3.13rem; left:5rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	61%{top: 3.13rem; left:5rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png)}
-	75%{top: 2.46rem; left:3.9rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png)}
-	76%{top: 2.46rem; left:3.9rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	93%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);opacity: 1;}
-	100%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);opacity: 0;}
-	/*100%{top: rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);}*/
+	0%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png); }
+	15%{top: 3.2rem; left:5.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png);}
+	16%{top: 3.2rem; left:5.06rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	30%{top: 3.74rem; left: 4.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	34%{top: 3.78rem; left: 4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	45%{top: 2.3rem; left:6.36rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	46%{top: 2.3rem; left:6.36rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	60%{top: 3.13rem; left:5rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	61%{top: 3.13rem; left:5rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png)}
+	75%{top: 2.46rem; left:3.9rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png)}
+	76%{top: 2.46rem; left:3.9rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	93%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);opacity: 1;}
+	100%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);opacity: 0;}
+	/*100%{top: rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);}*/
 }
 
 @-moz-keyframes carorage{
-	0%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png); }
-	15%{top: 3.2rem; left:5.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png);}
-	16%{top: 3.2rem; left:5.06rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	30%{top: 3.74rem; left: 4.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	34%{top: 3.78rem; left: 4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	45%{top: 2.3rem; left:6.36rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	46%{top: 2.3rem; left:6.36rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	60%{top: 3.13rem; left:5rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	61%{top: 3.13rem; left:5rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png)}
-	75%{top: 2.46rem; left:3.9rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png)}
-	76%{top: 2.46rem; left:3.9rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	84%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	85%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	88%{top: 3.9rem; left: 6.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	89%{top: 3.9rem; left: 6.7rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	93%{top: 4.14rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	94%{top: 4.15rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);opacity: 1;}
-	100%{top: 4.16rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);opacity: 0;}
+	0%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png); }
+	15%{top: 3.2rem; left:5.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png);}
+	16%{top: 3.2rem; left:5.06rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	30%{top: 3.74rem; left: 4.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	34%{top: 3.78rem; left: 4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	45%{top: 2.3rem; left:6.36rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	46%{top: 2.3rem; left:6.36rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	60%{top: 3.13rem; left:5rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	61%{top: 3.13rem; left:5rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png)}
+	75%{top: 2.46rem; left:3.9rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png)}
+	76%{top: 2.46rem; left:3.9rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	84%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	85%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	88%{top: 3.9rem; left: 6.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	89%{top: 3.9rem; left: 6.7rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	93%{top: 4.14rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	94%{top: 4.15rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);opacity: 1;}
+	100%{top: 4.16rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);opacity: 0;}
 }
 @-webkit-keyframes carorage{
-	0%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png); }
-	15%{top: 3.2rem; left:5.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png);}
-	16%{top: 3.2rem; left:5.06rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	30%{top: 3.74rem; left: 4.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	34%{top: 3.78rem; left: 4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	45%{top: 2.3rem; left:6.36rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	46%{top: 2.3rem; left:6.36rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	60%{top: 3.13rem; left:5rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	61%{top: 3.13rem; left:5rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png)}
-	75%{top: 2.46rem; left:3.9rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png)}
-	76%{top: 2.46rem; left:3.9rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	84%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	85%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	88%{top: 3.9rem; left: 6.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	89%{top: 3.9rem; left: 6.7rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	93%{top: 4.14rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	94%{top: 4.15rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);opacity: 1;}
-	100%{top: 4.16rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);opacity: 0;}
+	0%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png); }
+	15%{top: 3.2rem; left:5.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png);}
+	16%{top: 3.2rem; left:5.06rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	30%{top: 3.74rem; left: 4.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	34%{top: 3.78rem; left: 4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	45%{top: 2.3rem; left:6.36rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	46%{top: 2.3rem; left:6.36rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	60%{top: 3.13rem; left:5rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	61%{top: 3.13rem; left:5rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png)}
+	75%{top: 2.46rem; left:3.9rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png)}
+	76%{top: 2.46rem; left:3.9rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	84%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	85%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	88%{top: 3.9rem; left: 6.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	89%{top: 3.9rem; left: 6.7rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	93%{top: 4.14rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	94%{top: 4.15rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);opacity: 1;}
+	100%{top: 4.16rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);opacity: 0;}
 }
 @-ms-keyframes carorage{
-	0%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png); }
-	15%{top: 3.2rem; left:5.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png);}
-	16%{top: 3.2rem; left:5.06rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	30%{top: 3.74rem; left: 4.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	34%{top: 3.78rem; left: 4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	45%{top: 2.3rem; left:6.36rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	46%{top: 2.3rem; left:6.36rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	60%{top: 3.13rem; left:5rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carbb.png)}
-	61%{top: 3.13rem; left:5rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png)}
-	75%{top: 2.46rem; left:3.9rem;background-image: url(http://localhost/devxiyue/Public/Home/img/card.png)}
-	76%{top: 2.46rem; left:3.9rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	84%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	85%{top: 3.92rem; left: 6.4rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	88%{top: 3.9rem; left: 6.6rem;background-image: url(http://localhost/devxiyue/Public/Home/img/cardd.png)}
-	89%{top: 3.9rem; left: 6.7rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	93%{top: 4.14rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png)}
-	94%{top: 4.15rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);opacity: 1;}
-	100%{top: 4.16rem; left: 7.1rem;background-image: url(http://localhost/devxiyue/Public/Home/img/carb.png);opacity: 0;}
+	0%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png); }
+	15%{top: 3.2rem; left:5.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png);}
+	16%{top: 3.2rem; left:5.06rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	30%{top: 3.74rem; left: 4.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	34%{top: 3.78rem; left: 4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	45%{top: 2.3rem; left:6.36rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	46%{top: 2.3rem; left:6.36rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	60%{top: 3.13rem; left:5rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carbb.png)}
+	61%{top: 3.13rem; left:5rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png)}
+	75%{top: 2.46rem; left:3.9rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/card.png)}
+	76%{top: 2.46rem; left:3.9rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	84%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	85%{top: 3.92rem; left: 6.4rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	88%{top: 3.9rem; left: 6.6rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/cardd.png)}
+	89%{top: 3.9rem; left: 6.7rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	93%{top: 4.14rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png)}
+	94%{top: 4.15rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);opacity: 1;}
+	100%{top: 4.16rem; left: 7.1rem;background-image: url(http://366757.ouyouhui.com/Public/Home/img/carb.png);opacity: 0;}
 }
 .carwhite{
-    background: url(http://localhost/devxiyue/Public/Home/img/carh.png) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img/carh.png) no-repeat;
    background-size: 100% 100%;
     top: 3.43rem;
     left: 8.5rem;
 }
 .carwhite2{
-    background: url(http://localhost/devxiyue/Public/Home/img/carw.png) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img/carw.png) no-repeat;
    background-size: 100% 100%;
     top: 2.5rem;
     left: 3rem;
 }
 .carwhite3{
-    background: url(http://localhost/devxiyue/Public/Home/img/cary.png) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img/cary.png) no-repeat;
    background-size: 100% 100%;
     top: 2.6rem;
     left: 3.2rem;
@@ -427,7 +427,7 @@ html,body{
     height: 6.86rem; */
     width: 100%;
     height: 100%;
-    background: url(http://localhost/devxiyue/Public/Home/img/newbg2.jpg) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img/newbg2.jpg) no-repeat;
     background-size: 100% auto;
 }
 .main_game .main_game_bland{
@@ -437,7 +437,7 @@ html,body{
 .building{
     width: 0.8rem;
 	height: 1rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/building.png) no-repeat 0 0;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/building.png) no-repeat 0 0;
 	background-size:400% 500%;
 	position: absolute;
     bottom: -0.01rem;
@@ -447,7 +447,7 @@ html,body{
 }
 
 .main_game .cur{
-	background: url(http://localhost/devxiyue/Public/Home/img/back_pic.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/back_pic.png) no-repeat;
 	background-size: 100% 100%;
 }
 
@@ -471,12 +471,12 @@ img[src=""]{opacity: 0;}
 }
 .companyJ{
     height: 0.915rem;
-    background: url(http://localhost/devxiyue/Public/Home/img_b/1.png) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img_b/1.png) no-repeat;
     background-size: 100% 100%;
 }
 .companyY{
 	height: 0.7184rem;
-    background: url(http://localhost/devxiyue/Public/Home/img_b/2.png) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img_b/2.png) no-repeat;
 	background-size: 100% 100%;
 }
 
@@ -661,11 +661,11 @@ img[src=""]{opacity: 0;}
 	margin-top: 0.6rem;
 }
 .main_choose_shop #left{
-	background: url(http://localhost/devxiyue/Public/Home/img/choose_left.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/choose_left.png) no-repeat;
 	background-size: 100% 100%;
 }
 .main_choose_shop #right{
-	background: url(http://localhost/devxiyue/Public/Home/img/choose_right.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/choose_right.png) no-repeat;
 	background-size: 100% 100%;
 	right: 0;
 }
@@ -741,7 +741,7 @@ img[src=""]{opacity: 0;}
     width: 0.2rem;
     height: 0.2rem;
     position: absolute;
-    background: url(http://localhost/devxiyue/Public/Home/img/green.png) no-repeat;
+    background: url(http://366757.ouyouhui.com/Public/Home/img/green.png) no-repeat;
     background-size: 100% 100%;
 
 }
@@ -795,13 +795,13 @@ img[src=""]{opacity: 0;}
 	margin: 0.05rem;
 }
 .return{
-	background: url(http://localhost/devxiyue/Public/Home/img/return.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/return.png) no-repeat;
 	background-size: 100% 100%;
 }
 .main_close{
 	width: 0.2rem;
 	height: 0.2rem;
-	display: inline-block;background: url(http://localhost/devxiyue/Public/Home/img/x.png) no-repeat;
+	display: inline-block;background: url(http://366757.ouyouhui.com/Public/Home/img/x.png) no-repeat;
 	background-size: 100% 100%;
 	float: right;
 	margin: 0.05rem;
@@ -899,7 +899,7 @@ img[src=""]{opacity: 0;}
 	margin-top: 0.08rem;
 	width: 90%;
 	height: 60%;
-	background: url(http://localhost/devxiyue/Public/Home/img/maidi.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/maidi.png) no-repeat;
 	background-size: 100% 100%;
 }
 .main_mai .main_body_pop .main_mai_blank .blank_name{
@@ -1075,7 +1075,7 @@ img[src=""]{opacity: 0;}
 	vertical-align: middle;
 }
 .main_com_body2 .buy_money .buy_money_photo{
-	background: url(http://localhost/devxiyue/Public/Home/img/gold.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/gold.png) no-repeat;
 	background-size: 100% 100%;
 	width: 0.22rem;
 	height: 0.22rem;
@@ -1165,7 +1165,7 @@ img[src=""]{opacity: 0;}
 .barbox dd.last{color:#999;}
 .barbox dd.barline{
 	width:100%;
-	background:url(http://localhost/devxiyue/Public/Home/img/jdtbg.png) left center no-repeat;
+	background:url(http://366757.ouyouhui.com/Public/Home/img/jdtbg.png) left center no-repeat;
 	background-size:100% 100%;
 	height:0.1rem;
 	overflow:hidden;
@@ -1174,7 +1174,7 @@ img[src=""]{opacity: 0;}
 .barbox dd.barline div.charts{
 	height:0.1rem;
 	overflow:hidden;
-	background:url(http://localhost/devxiyue/Public/Home/img/barbg.gif) right center repeat-x;
+	background:url(http://366757.ouyouhui.com/Public/Home/img/barbg.gif) right center repeat-x;
 	background-size: 100% 100%;
 	border-radius:0.05rem;
 	}
@@ -1248,7 +1248,7 @@ img[src=""]{opacity: 0;}
 	vertical-align: middle;
 	width: 0.2rem;
 	height: 0.2rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/gold.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/gold.png) no-repeat;
 	background-size:100% 100% ;
 }
 .noUpDown,.addBed p,.UpTakeC{
@@ -1996,7 +1996,7 @@ button{
 
 .yindaoA{
 	position: absolute;
-	background: url(http://localhost/devxiyue/Public/Home/img/yindao_xia.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/yindao_xia.png) no-repeat;
 	background-size: 100% 100%;
 	width: 0.2rem;
 	height: 0.24rem;
@@ -2010,7 +2010,7 @@ button{
 	position: absolute;
 	left: 0.4rem;
 	top: 0.08rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/yindao_xia.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/yindao_xia.png) no-repeat;
 	background-size: 100% 100%;
 	width: 0.2rem;
 	height: 0.24rem;
@@ -2024,7 +2024,7 @@ button{
 	position: absolute;
 	left: 0.1rem;
 	top: -0.24rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/yindao_xia.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/yindao_xia.png) no-repeat;
 	background-size: 100% 100%;
 	width: 0.2rem;
 	height: 0.24rem;
@@ -2038,7 +2038,7 @@ button{
 	position: absolute;
 	left: 0.3rem;
 	top: -0.24rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/yindao_xia.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/yindao_xia.png) no-repeat;
 	background-size: 100% 100%;
 	width: 0.2rem;
 	height: 0.24rem;
@@ -2052,7 +2052,7 @@ button{
 	position: absolute;
 	left: 1.11rem;
 	top: 0.04rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/yindao_xia.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/yindao_xia.png) no-repeat;
 	background-size: 100% 100%;
 	width: 0.2rem;
 	height: 0.24rem;
@@ -2066,7 +2066,7 @@ button{
 	position: absolute;
 	left: 0.16rem;
 	top: -0.24rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/yindao_xia.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/yindao_xia.png) no-repeat;
 	background-size: 100% 100%;
 	width: 0.2rem;
 	height: 0.24rem;
@@ -2080,7 +2080,7 @@ button{
 	position: absolute;
 	left: 0.16rem;
 	top: -0.24rem;
-	background: url(http://localhost/devxiyue/Public/Home/img/yindao_xia.png) no-repeat;
+	background: url(http://366757.ouyouhui.com/Public/Home/img/yindao_xia.png) no-repeat;
 	background-size: 100% 100%;
 	width: 0.2rem;
 	height: 0.24rem;
@@ -2109,7 +2109,7 @@ button{
 .barbox dd.barline div.charts1 {
     height: 0.1rem;
     overflow: hidden;
-    background: url(http://localhost/devxiyue/Public/Home/img/barbg.gif) right center repeat-x;
+    background: url(http://366757.ouyouhui.com/Public/Home/img/barbg.gif) right center repeat-x;
     background-size: 100% 100%;
     border-radius: 0.05rem;
 }

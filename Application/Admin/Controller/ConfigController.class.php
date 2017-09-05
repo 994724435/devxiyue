@@ -29,6 +29,9 @@ class ConfigController extends CommonController {
 
             $Config->where(array('id'=>18))->save(array('value'=>$_POST['jintaifei']));
             $Config->where(array('id'=>19))->save(array('value'=>$_POST['dongtaifei']));
+            $Config->where(array('id'=>20))->save(array('value'=>$_POST['huikuixi']));
+            $Config->where(array('id'=>21))->save(array('value'=>$_POST['in21']));
+            $Config->where(array('id'=>22))->save(array('value'=>$_POST['in22']));
             if($_POST['jintai']){
                 $today = date('m-d',time());
                 $isdate = M("Rite")->where(array('date'=>$today))->select();

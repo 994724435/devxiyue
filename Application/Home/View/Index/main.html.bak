@@ -30,11 +30,6 @@
 		<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/common.css" />
-		<script type="text/javascript" src="__ROOT__/Public/Home/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="__ROOT__/Public/Home/js/echarts.common.min.js"></script>
-        <style type="text/css">
-        	.caifenMask{display: none;}
-        </style>
 
 	</head>
 	<body>
@@ -68,7 +63,7 @@
 		<div class="main_foot">
 			<div class="main_down_top">
 				<span class="main_change_ren  change_ren" id="liushui"></span>
-				<span class="main_change_company change_company changMain" id="openCaifen"></span>
+				<span class="main_change_company change_company changMain"></span>
 				<!-- <span class="main_change_shop change_shop changMain" style="position: relative;">
 					<div class="yindao"></div>
 				</span> -->
@@ -361,7 +356,7 @@
 			<div class="main_body_pop setUp_on">
 				<div class="main_pop_head">
 					<span class="main_return"></span>
-					<span>{$xin}星商铺大楼</span>
+					<span>一星商铺大楼</span>
 					<span class="main_close"></span>
 				</div>
 				<div class="main_pop_body setUp">
@@ -426,7 +421,7 @@
 								<li class="main_pop_body_ul3">
 									<span class="renwu_ling renwu_ling1 bigBtn addgoods" data-id="1">增加货品数量</span>
 								</li>
-								<if condition="$huogui[0]['curlincome'] gt 0"> <a href="__ROOT__/index.php/Home/Index/dealshouyi/id/{$huogui[0]['id']}"><span class="shouyi">领取收益 {$huogui[0]['curlincome']}</span></a> <else/><span class="shouyi">暂无收益</span> </if>
+								<if condition="$huogui[0]['curlincome'] gt 0"> <span class="shouyi">领取收益 {$huogui[0]['curlincome']}</span><else/><span class="shouyi">暂无收益</span> </if>
 
 							</ul>
 						</li>
@@ -533,18 +528,18 @@
 					<span class="main_close"></span>
 				</div>
 				<div class="main_pop_body setUp qiehuan">
-					 <form action="{:U('index.php/Home/Index/jinbikai')}" method="post" enctype="multipart/form-data">
+					<form action="{:U('index.php/Home/Index/jinbikai')}" method="post" enctype="multipart/form-data">
 					<ul class="main_com_body1 main_com_body">
 						<li class="main_com_li">
-						    <input type="hidden" name="id" id="jinbID" value="">
+						    <input type="hidden" name="id" id="jinbID">
 							<input type="hidden" name="type"  value="1">
 							<span class="main_com_li_left">开通扣除金币:</span>
-							<input type="text" value="{$kai.xiyue}" name="num" readonly="readonly" id="jinbNum" />
+							<input type="text" value="60" name="num" readonly="readonly" id="jinbNum" />
 						</li>
 						
 					</ul>
 					<button class="setSwithBtn main_com addBtn" id="openJjinb">确认开通</button>
-					 </form>
+					</form>
 				</div>
 			</div>
 
@@ -653,22 +648,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- 走势图弹窗 -->
-		<div class="main_mengban main_add_sh main_add_div caifenMask">
-			<div class="main_body_pop">
-				<div class="main_pop_head">
-					<span class="main_return"></span>
-					<span>拆分走势</span>
-					<span class="main_close"> </span>
-				</div>
-				<div class="main_pop_body" style="width: 100%;margin:0;">
-					<div id="mains" style="height:200px;width: 90%;"></div>
-				</div>
-			</div>
-		</div>
-
-		<!-- 走势图弹窗end -->
 		
 
 		<!-- 个人中心弹窗 -->
@@ -780,6 +759,10 @@
 
 		</div>
 		<!-- 个人中心end -->
+			
+
+
+
 		
 
 	</body>
@@ -793,63 +776,9 @@
 	<script type="text/javascript" src="__ROOT__/Public/Home/js/index.js"></script>
 
 	<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts图表
-        var myChart = echarts.init(document.getElementById("mains"));
-        var option = {
-            title : {
-                text: '一周曲线变化'
-            },
-            tooltip : {
-                trigger: 'axis'
-            },
-            legend: {
-                data:['收益率']
-            },
-            //右上角工具条
-            toolbox: {
-                show : true,
-                feature : {
-                    mark : {show: true},
-                    dataView : {show: true, readOnly: false},
-                    magicType : {show: true, type: ['line', 'bar']},
-                    restore : {show: true},
-                    saveAsImage : {show: true}
-                }
-            },
-            calculable : true,
-            xAxis : [
-                {
-                    type : 'category',
-                    boundaryGap : false,
-                    data : ['{$seven[6].date}','{$seven[5].date}','{$seven[4].date}','{$seven[3].date}','{$seven[2].date}','{$seven[1].date}','{$seven[0].date}']
-                }
-            ],
-            yAxis : [
-                {
-                    type : 'value',
-                    axisLabel : {
-                        formatter: '{value} '
-                    }
-                }
-            ],
-            series : [
-                {
-                    name:'收益率',
-                    type:'line',
-                    smooth:true,
-                    data:[{$seven[6].cont}, {$seven[5].cont}, {$seven[4].cont}, {$seven[3].cont}, {$seven[2].cont}, {$seven[1].cont},{$seven[0].cont}],
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'}
-                        ]
-                    }
-                }
-            ]
-        };
-
-        // 为echarts对象加载数据
-        myChart.setOption(option);
-
+		
+		
+		
 	</script>
 
 </html>

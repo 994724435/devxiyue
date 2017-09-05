@@ -51,47 +51,78 @@ class UserController extends Controller {
 //        if($res[0]){
 //            print_r('今日受益已结算');die;
 //        }
-        $orderlog =M('orderlog');
-        //所有
-        $allorderlog = $orderlog->where(array('states'=>1,'productid'=>1))->select();
-
         $menber = M("menber");
+        $income = M("incomelog");
+        $huogui = M('huogui');
+        //所有
+        $allorderlog = $menber->select();
 
         if(!$allorderlog[0]){
-            print_r('暂无收益');die;
+            print_r('no data');die;
         }
+
+        $configobj =M('config')->where(array('id'=>21))->select();
+        $config =$configobj[0]['value'];
+
+        $configobj =M('config')->where(array('id'=>22))->select();
+        $configfid =$configobj[0]['value'];
 
         foreach($allorderlog as $key=>$val) {
             //自己受益
-            $res_own = $this->getusernums($val['userid'], $val['logid'], $val['num']);
-            if (!$res_own) {
-                echo $val['logid']."<br>";
-                continue;
-            }
-            $configobj =M('config')->where(array('id'=>2))->select();
-            $config =$configobj[0]['value'];
-            $mif = M('config')->where(array('id'=>1))->select();
+//            $res_own = $this->getusernums($val['userid'], $val['logid'], $val['num']);
+//            if (!$res_own) {
+//                echo $val['logid']."<br>";
+//                continue;
+//            }
 
-            $base = bcmul ($mif[0]['value'], $config,2);
+            $huoguis =$huogui->where(array('uid'=>$val['uid'],'state'=>1))->select();
 
-            $income = bcmul($base, $val['num'], 2);
-            $data['state'] = 1;
-            $data['reson'] = "静态收益";
-            $data['type'] = 10;
-            $data['addymd'] = date('Y-m-d', time());
-            $data['addtime'] = time();
-            $data['orderid'] = $val['logid'];
-            $data['userid'] = $val['userid'];
-            $data['income'] = $income;
-            if ($income > 0) {
-                $userinfo = $menber->where(array('uid'=>$val['userid']))->select();
-                $afterincom = bcadd($userinfo[0]['jingbag'],$income);
-                $menber->where(array('uid'=>$val['userid']))->save(array('jingbag'=>$afterincom));
-                $this->savelog($data);
+            foreach ($huoguis as $k=>$v){
+
+                if($v['curlnum']){
+                    $incomess= bcmul($config,$v['curlnum'],2);
+                    $curlincome = bcdiv($incomess,100);
+
+                    $data['state'] = 0;
+                    $data['reson'] = "货品静态收益";
+                    $data['type'] = 12;
+                    $data['addymd'] = date('Y-m-d', time());
+                    $data['addtime'] = time();
+                    $data['orderid'] = 0 ;
+                    $data['cont'] = $v['num'];
+                    $data['userid'] = $val['uid'];
+                    $data['income'] = $curlincome;
+                    if ($curlincome > 0) {
+                        // 更新货柜收益
+                        $curlincomehuo =bcadd($v['curlincome'] ,$curlincome);
+                        $huogui->where(array('id'=>$v['id']))->save(array('curlincome'=>$curlincomehuo));
+                        $logid= $this->savelog($data);
+
+                        // 上级触发
+                        if($val['fuid']){
+                            $incomesfid= bcmul($configfid,$curlincome,2);
+                            $incomefid =  bcdiv($incomesfid,100,2);
+                            $data1['state'] = 0;
+                            $data1['reson'] = "下级拆分收益";
+                            $data1['type'] = 10;
+                            $data1['addymd'] = date('Y-m-d', time());
+                            $data1['addtime'] = time();
+                            $data1['orderid'] = $val['tel'];
+                            $data1['cont'] =$val['name'];
+                            $data1['userid'] = $val['fuid'];
+                            $data1['income'] = $incomefid;
+                            if ($incomefid > 0) {
+                                $this->savelog($data1);
+                            }
+                        }
+
+                    }
+                }
+
             }
 
         }
-        echo '成功';
+        echo 'success';
     }
 
     /**
@@ -124,49 +155,9 @@ class UserController extends Controller {
     }
 
 
-    public function crantabUserIncome(){
-        $menber =M('menber');
-        $income =M('incomelog');
-        if($_GET['uid']){
-            $map['uid']  = $_GET['uid'];
-        }else{
-            $map['uid']  = array('gt',9);
-        }
-        $result_user = $menber->where($map)->select();
-        foreach($result_user as $k=>$v){
-            $chargebag = $v['chargebag'];
-            $incomebag = $v['incomebag'];
-            $allIncome =bcadd($chargebag,$incomebag,2);  // 所有钱包
-
-            $daycomelogs = $income->where(array('state'=>1,'userid'=>$v['uid']))->select();
-            $userIncome = 0;
-            foreach($daycomelogs as $k1=>$v1){         // 收益
-                $userIncome =bcadd($userIncome,$v1['income'],2);
-            }
-            if($_GET['uid']){
-                print_r("每日收益==》".$userIncome);
-            }
-            $dayoutlogs = $income->where(array('state'=>2,'userid'=>$v['uid']))->select();
-
-            $userOut = 0;                              // 支出
-            foreach($dayoutlogs as $k2=>$v2){
-                $userOut =bcadd($userOut,$v2['income'],2);
-            }
-            if($_GET['uid']){
-                print_r("<br>总支出==》".$userOut);
-            }
-            $allIncomesUser =bcsub($userIncome,$userOut,2);      // 总收入
-            if($allIncomesUser < 0){
-                print_r("userID".$v['uid']."收入日志异常");
-            }
-            $layout =$allIncomesUser-$allIncome;
-            if($layout!=0){
-               print_r("用户ID：".$v['uid']."<br>");
-               print_r("钱包总额：".$allIncome."<br>");
-               print_r("收入总额：".$allIncomesUser."<br><br><br>");
-            }
-        }
-//        print_r($result_user);die;
+    public function getUserHuo($userid){
+        $huogui = M("huogui")->where(array('uid'=>$userid,'state'=>1))->sum('curlnum');
+        return $huogui;
     }
 
 

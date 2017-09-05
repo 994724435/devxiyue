@@ -150,7 +150,7 @@ class IndexController extends CommonController {
             $map['orderid'] =$_GET['orderid'];
         }
         $users= $orderlog->where($map)->select();
-
+//        print_r($users);die;
         $this->assign('users',$users);
         $this->display();
     }

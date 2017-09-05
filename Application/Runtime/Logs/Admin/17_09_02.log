@@ -1,0 +1,2263 @@
+[ 2017-09-02T08:35:47+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: uname C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\CommonController.class.php 第 7 行.
+
+[ 2017-09-02T08:35:48+08:00 ] 127.0.0.1 /index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T08:35:54+08:00 ] 127.0.0.1 /index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin' AND `password` = '123asd'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T08:35:54+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_user`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Public/conn/header.html): failed to open stream: No such file or directory C:\php\phpstudy\WWW\devxiyue\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T08:36:00+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T08:36:59+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T08:37:50+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 8 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T08:40:23+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-09-02T08:40:36+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0150s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:41:17+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:44:00+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:44:11+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:44:12+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:44:13+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:44:13+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:44:13+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0100s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-09-02T08:44:14+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0150s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:44:14+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:44:34+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-09-02T08:44:52+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0150s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-09-02T08:45:43+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-09-02T08:46:32+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0125s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504313192','103','103','1','12') [ RunTime:0.0000s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 8 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504313192','107','107','4','18') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-09-02T08:46:45+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+
+[ 2017-09-02T08:46:46+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+
+[ 2017-09-02T09:12:10+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0130s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504314730','103','103','1','12') [ RunTime:0.0010s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 8 AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504314730','107','107','4','18') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T09:12:46+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0120s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504314766','103','103','1','12') [ RunTime:0.0010s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 8 AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504314766','107','107','4','18') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:07:21+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: uname C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\CommonController.class.php 第 7 行.
+
+[ 2017-09-02T14:07:21+08:00 ] 127.0.0.1 /index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:07:28+08:00 ] 127.0.0.1 /index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin' AND `password` = '123asd'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T14:07:28+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Public/conn/header.html): failed to open stream: No such file or directory C:\php\phpstudy\WWW\devxiyue\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:07:31+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:12:51+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:18:49+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:20:25+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T14:20:32+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_menber` WHERE `tel` = '100'  [ RunTime:0.0010s ]
+SQL: UPDATE `p_menber` SET `xiyue`='1038' WHERE `tel` = '100' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0120s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`userid`,`income`) VALUES ('1','充值','2','2017-09-02','2017','admin','1','10') [ RunTime:0.0000s ]
+
+[ 2017-09-02T14:20:34+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T14:20:52+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_menber` WHERE `tel` = '100'  [ RunTime:0.0010s ]
+SQL: UPDATE `p_menber` SET `xiyue`='1138' WHERE `tel` = '100' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0120s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`userid`,`income`) VALUES ('1','充值','2','2017-09-02','2017','admin','1','100') [ RunTime:0.0010s ]
+
+[ 2017-09-02T14:20:54+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:23:01+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:25:12+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-02T14:25:30+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:25:46+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:25:51+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:25:59+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:26:58+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T14:27:23+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:43:34+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:48:26+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T16:49:27+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:49:39+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:50:16+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:50:29+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:51:11+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T16:51:37+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:51:47+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:51:57+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:52:24+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:53:21+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T16:53:26+08:00 ] 127.0.0.1 /index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T16:53:35+08:00 ] 127.0.0.1 /index.php/Admin/Menber/editeUser/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber` WHERE `uid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:54:41+08:00 ] 127.0.0.1 /index.php/Admin/Menber/editeUser/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_menber` WHERE `uid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T16:55:00+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:56:34+08:00 ] 127.0.0.1 /index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T16:57:25+08:00 ] 127.0.0.1 /index.php/Admin/Menber/tixiansheng
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0050s ]
+ERR: 1054:Unknown column 'p_menber.email' in 'field list'
+ [ SQL语句 ] : SELECT p_incomelog.addtime as addtimes,p_incomelog.addymd as addymds,p_menber.name,p_menber.tel,p_menber.email,p_menber.realname,p_menber.zhifubao,p_menber.weixin,p_menber.bank,p_menber.bankname,p_menber.bankfrom,p_incomelog.userid,`income`,`id`,`orderid`,`reson` FROM `p_incomelog` INNER JOIN p_menber ON p_incomelog.userid=p_menber.uid  WHERE p_incomelog.type IN ('3','4','7') AND p_incomelog.state = 0 AND p_incomelog.addtime > 0 
+ERR: 1054:Unknown column 'p_menber.email' in 'field list'
+ [ SQL语句 ] : SELECT p_incomelog.addtime as addtimes,p_incomelog.addymd as addymds,p_menber.name,p_menber.tel,p_menber.email,p_menber.realname,p_menber.zhifubao,p_menber.weixin,p_menber.bank,p_menber.bankname,p_menber.bankfrom,p_incomelog.userid,`income`,`id`,`orderid`,`reson` FROM `p_incomelog` INNER JOIN p_menber ON p_incomelog.userid=p_menber.uid  WHERE p_incomelog.type IN ('3','4','7') AND p_incomelog.state = 0 AND p_incomelog.addtime > 0 
+
+[ 2017-09-02T16:57:33+08:00 ] 127.0.0.1 /index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:57:35+08:00 ] 127.0.0.1 /index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 110 行.
+NOTIC: [8] Undefined index: type C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 113 行.
+NOTIC: [8] Undefined index: mindate C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 119 行.
+SQL: SELECT * FROM `p_incomelog` ORDER BY type asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:57:40+08:00 ] 127.0.0.1 /index.php/Admin/Menber/tixiansheng
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0040s ]
+ERR: 1054:Unknown column 'p_menber.email' in 'field list'
+ [ SQL语句 ] : SELECT p_incomelog.addtime as addtimes,p_incomelog.addymd as addymds,p_menber.name,p_menber.tel,p_menber.email,p_menber.realname,p_menber.zhifubao,p_menber.weixin,p_menber.bank,p_menber.bankname,p_menber.bankfrom,p_incomelog.userid,`income`,`id`,`orderid`,`reson` FROM `p_incomelog` INNER JOIN p_menber ON p_incomelog.userid=p_menber.uid  WHERE p_incomelog.type IN ('3','4','7') AND p_incomelog.state = 0 AND p_incomelog.addtime > 0 
+ERR: 1054:Unknown column 'p_menber.email' in 'field list'
+ [ SQL语句 ] : SELECT p_incomelog.addtime as addtimes,p_incomelog.addymd as addymds,p_menber.name,p_menber.tel,p_menber.email,p_menber.realname,p_menber.zhifubao,p_menber.weixin,p_menber.bank,p_menber.bankname,p_menber.bankfrom,p_incomelog.userid,`income`,`id`,`orderid`,`reson` FROM `p_incomelog` INNER JOIN p_menber ON p_incomelog.userid=p_menber.uid  WHERE p_incomelog.type IN ('3','4','7') AND p_incomelog.state = 0 AND p_incomelog.addtime > 0 
+
+[ 2017-09-02T16:58:05+08:00 ] 127.0.0.1 /index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 110 行.
+NOTIC: [8] Undefined index: type C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 113 行.
+NOTIC: [8] Undefined index: mindate C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 119 行.
+SQL: SELECT * FROM `p_incomelog` ORDER BY type asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:58:07+08:00 ] 127.0.0.1 /index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 110 行.
+NOTIC: [8] Undefined index: type C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 113 行.
+NOTIC: [8] Undefined index: mindate C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 119 行.
+SQL: SELECT * FROM `p_incomelog` ORDER BY type asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T16:58:17+08:00 ] 127.0.0.1 /index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T16:59:11+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T17:02:38+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T17:08:26+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T17:08:32+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T17:08:44+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_config` ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T17:08:55+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T17:10:02+08:00 ] 127.0.0.1 /index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T17:10:45+08:00 ] 127.0.0.1 /index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T17:23:36+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T17:51:50+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T17:52:18+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+
+[ 2017-09-02T17:52:23+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 33 行.
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T17:53:06+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+
+[ 2017-09-02T17:54:14+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `p_menber` WHERE `tel` = '100'  [ RunTime:0.0010s ]
+SQL: UPDATE `p_menber` SET `xiyue`='1100' WHERE `tel` = '100' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0050s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`userid`,`income`) VALUES ('2','管理员扣除','2','2017-09-02','2017','admin','1','38') [ RunTime:0.0010s ]
+
+[ 2017-09-02T17:54:16+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 34 行.
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 66 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T18:19:14+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 34 行.
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 66 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T18:19:20+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0050s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504347560','103','103','1','12') [ RunTime:0.0000s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 8 AND `state` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504347560','107','107','4','18') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T18:19:23+08:00 ] 127.0.0.1 /index.php/Admin/User/crontab
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_incomelog` WHERE `addymd` = '2017-09-02' AND `type` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_config` WHERE `id` = 21  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_huogui` [ RunTime:0.0040s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 4 AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504347563','103','103','1','12') [ RunTime:0.0000s ]
+SQL: SELECT SUM(curlnum) AS tp_sum FROM `p_huogui` WHERE `uid` = 8 AND `state` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `p_incomelog` (`state`,`reson`,`type`,`addymd`,`addtime`,`orderid`,`cont`,`userid`,`income`) VALUES ('0','下级货品收益','10','2017-09-02','1504347563','107','107','4','18') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T18:19:26+08:00 ] 127.0.0.1 /index.php/Admin/Menber/charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 34 行.
+NOTIC: [8] Undefined index: user C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 66 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T18:19:27+08:00 ] 127.0.0.1 /index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_incomelog` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 145 行.
+NOTIC: [8] Undefined index: type C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 148 行.
+NOTIC: [8] Undefined index: mindate C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 154 行.
+SQL: SELECT * FROM `p_incomelog` ORDER BY type asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T18:19:36+08:00 ] 127.0.0.1 /index.php/Admin/Menber/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_menber` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: name C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\MenberController.class.php 第 7 行.
+SQL: SELECT * FROM `p_menber`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T18:19:38+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T18:20:20+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T22:37:11+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: uname C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\CommonController.class.php 第 7 行.
+
+[ 2017-09-02T22:37:12+08:00 ] 127.0.0.1 /index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-02T22:37:18+08:00 ] 127.0.0.1 /index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin' AND `password` = '123asd'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T22:37:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `p_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Public/conn/header.html): failed to open stream: No such file or directory C:\php\phpstudy\WWW\devxiyue\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T22:37:22+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T22:38:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-02T22:38:58+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0000s ]
+
+[ 2017-09-02T22:44:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0020s ]
+
+[ 2017-09-02T22:44:36+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-02T22:44:45+08:00 ] 127.0.0.1 /index.php/Admin/Index/select
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `p_orderlog` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: state C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 142 行.
+NOTIC: [8] Undefined index: uid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 146 行.
+NOTIC: [8] Undefined index: orderid C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: map C:\php\phpstudy\WWW\devxiyue\Application\Admin\Controller\IndexController.class.php 第 152 行.
+SQL: SELECT * FROM `p_orderlog`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+NOTIC: [8] Undefined index: states C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 202 行.
+NOTIC: [8] Undefined index: prices C:\php\phpstudy\WWW\devxiyue\Application\Runtime\Cache\Admin\8aacb4bacc5323aefb881fa5bf623748.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
